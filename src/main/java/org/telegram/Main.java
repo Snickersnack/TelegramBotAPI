@@ -1,5 +1,6 @@
 package org.telegram;
 
+import org.telegram.newbot.NewBotHandler;
 import org.telegram.updateshandlers.*;
 import org.telegram.updatesreceivers.Webhook;
 

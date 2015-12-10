@@ -7921,3 +7921,631 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 [9_12_2015_17_20:41]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
 [9_12_2015_17_21:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
 [9_12_2015_17_21:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_22:56]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_22:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_22:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642582,"message":{"date":1449715316,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":127,"from":{"id":131858887,"first_name":"Ricky","username":"Rikuu"},"text":"/help"}},{"update_id":896642583,"message":{"date":1449715323,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":128,"from":{"id":131858887,"first_name":"Ricky","username":"Rikuu"},"text":"/get penis"}}]
+[9_12_2015_22_22:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_23:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642584,"message":{"date":1449728585,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":130,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_23:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_23:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_23:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_23:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_23:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_24:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_24:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_24:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_24:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_24:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_24:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_25:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_25:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_25:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_25:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_25:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_25:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_26:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_26:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_26:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_26:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_26:59]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_27:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_27:20]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_27:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_27:33]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_27:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_27:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642585,"message":{"date":1449728859,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":132,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/YELP"}}]
+[9_12_2015_22_27:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_27:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642586,"message":{"date":1449728863,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":133,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_27:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_28:34]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_28:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_28:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642587,"message":{"date":1449728920,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":135,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_28:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_28:42] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Message is too long","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:85)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:55)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_22_29:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_29:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:19]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_29:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642588,"message":{"date":1449728964,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":136,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/YELP"}}]
+[9_12_2015_22_29:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642589,"message":{"date":1449728965,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":137,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_29:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:27] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Message is too long","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:85)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:55)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_22_29:46]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_29:46]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642590,"message":{"date":1449728991,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":138,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_29:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_29:55] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Message is too long","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:86)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:55)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_22_30:11]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_30:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_30:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_30:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_30:55]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_30:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_31:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642591,"message":{"date":1449729070,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":139,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_22_31:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_31:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_31:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_31:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_31:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_32:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_32:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_32:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_32:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_32:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_32:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_33:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_33:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_33:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_33:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_34:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_34:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_34:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_34:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_34:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_34:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_35:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_35:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_35:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_35:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_35:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_35:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_36:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_36:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_36:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_36:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_36:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_36:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_37:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_37:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_37:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_37:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_37:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_37:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_38:16]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_38:16]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_38:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_38:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_38:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_38:59]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_39:20]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_39:20]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_39:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_39:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_40:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_40:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_41:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_41:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_42:34]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_22_42:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_42:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642592,"message":{"date":1449729765,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":141,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp sushi irvine"}}]
+[9_12_2015_22_42:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_43:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_43:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_43:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_43:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_43:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_43:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_44:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_44:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_44:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_44:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_44:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_44:53]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_45:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_45:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_45:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_45:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_45:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_45:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_46:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_46:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_46:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_46:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_47:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_47:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_47:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_47:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_47:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_47:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_48:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_48:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_48:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_48:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_48:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_48:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_49:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_49:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_49:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_49:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_49:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_49:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_50:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_50:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_50:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_50:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_50:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_50:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_51:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_51:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_51:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_51:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_52:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_52:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_52:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_52:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_52:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_52:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_53:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_53:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_53:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_53:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_53:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_53:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_54:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_54:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_54:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_54:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_54:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_54:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_55:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_55:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_55:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_55:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_55:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642593,"message":{"date":1449730552,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":143,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_22_55:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_56:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_56:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_56:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_56:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_56:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_56:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_57:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_57:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_57:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_57:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_57:59]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_58:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_58:20]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_58:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_58:42]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_58:42]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_59:3]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_59:3]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_59:24]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_59:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_22_59:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_22_59:46]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_0:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_0:7]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_0:28]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_0:28]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_0:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_0:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_1:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_1:11]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_1:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_1:32]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_1:53]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_1:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_2:15]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_2:15]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_2:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_2:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_2:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_2:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_3:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_3:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_3:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_3:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_4:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_4:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_4:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_4:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_4:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_4:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_5:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_5:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_5:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_5:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_5:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_5:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_6:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_6:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_6:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_6:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_6:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_6:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_7:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_7:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_7:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_7:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_7:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_7:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_8:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_8:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_8:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_8:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_9:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_9:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_9:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_9:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_9:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_9:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_10:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_10:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_10:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_10:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_10:46]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_10:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_11:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_11:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_11:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_11:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_11:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_11:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_12:11]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_12:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_12:32]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_12:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_12:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_12:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_13:15]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_13:15]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_13:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_13:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_13:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_13:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_14:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_14:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_14:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_14:41]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_15:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_15:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_15:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_15:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_15:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_15:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_16:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_16:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_16:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_16:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_16:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_16:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_17:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_17:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_17:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_17:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_17:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_17:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_18:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_18:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_18:38]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_23_18:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_18:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642594,"message":{"date":1449731930,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":145,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_18:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_19:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_19:11]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_19:32]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_19:32]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_19:56]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_23_19:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_20:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642595,"message":{"date":1449732002,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":146,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_20:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_20:3] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_20:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_20:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_20:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642596,"message":{"date":1449732035,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":147,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_20:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_20:36] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_21:0]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_23_21:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_21:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642597,"message":{"date":1449732066,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":148,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_21:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_21:6] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_21:29]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_23_21:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_21:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_21:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_21:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642598,"message":{"date":1449732111,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":149,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}},{"update_id":896642599,"message":{"date":1449732111,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":150,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_21:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_21:52] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_21:53] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_22:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_22:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_22:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642600,"message":{"date":1449732148,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":151,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp"}}]
+[9_12_2015_23_22:27] SEVERE - java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:82)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_22:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_22:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642601,"message":{"date":1449732151,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":152,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/stop"}}]
+[9_12_2015_23_22:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_22:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642602,"message":{"date":1449732153,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":154,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/help"}}]
+[9_12_2015_23_22:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_22:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642603,"message":{"date":1449732160,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":156,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_22:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_22:40] SEVERE - java.io.InvalidObjectException: {"description":"[Error]: Bad Request: can't parse message text: Can't find end of the entity starting at byte offset 3075","error_code":400,"ok":false}
+	at org.telegram.SenderHelper.SendApiMethod(SenderHelper.java:257)
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:93)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_22:54]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
+[9_12_2015_23_22:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_23:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642604,"message":{"date":1449732181,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":157,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson"},"text":"/yelp dessert tustin"}}]
+[9_12_2015_23_23:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_23:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_23:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_23:42]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_23:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_24:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_24:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_24:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_24:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_24:46]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_24:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_25:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_25:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_25:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_25:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_25:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_25:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_26:11]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_26:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_26:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_26:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_26:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_26:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_27:15]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_27:16]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_27:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_27:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_27:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_27:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_28:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_28:20]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_28:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_28:41]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_29:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_29:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_29:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_29:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_29:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_29:45]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_30:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_30:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_30:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_30:28]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_30:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_30:49]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_31:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_31:10]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_31:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_31:32]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_31:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_31:53]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_32:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_32:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_32:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_32:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_32:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_32:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_33:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_33:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_33:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_33:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_34:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_34:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_34:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_34:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_34:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_34:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_35:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_35:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_35:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_35:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_35:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_35:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_36:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_36:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_36:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_36:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_36:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_36:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_37:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_37:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_37:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_37:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_37:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_37:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_38:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_38:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_38:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":896642605,"message":{"date":1449733118,"chat":{"id":-14952387,"title":"Aw yiss","type":"group"},"message_id":159,"from":{"last_name":"Dea","id":141894529,"first_name":"Johnson","username":"JDeasaur"},"text":"/yelp"}}]
+[9_12_2015_23_38:37] SEVERE - java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.telegram.newbot.NewBotHandler.handleUpdate(NewBotHandler.java:82)
+	at org.telegram.newbot.NewBotHandler.onUpdateReceived(NewBotHandler.java:56)
+	at org.telegram.updatesreceivers.UpdatesThread$HandlerThread.run(UpdatesThread.java:137)
+
+[9_12_2015_23_38:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_38:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_38:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_39:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_39:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_39:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_39:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_40:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_40:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_40:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_40:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_40:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_40:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_41:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_41:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_41:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_41:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_41:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_41:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_42:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_42:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_42:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_42:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_42:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_42:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_43:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_43:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_43:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_43:35]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_43:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_43:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_44:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_44:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_44:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_44:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_45:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_45:2]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_45:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_45:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_45:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_45:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_46:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_46:6]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_46:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_46:27]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_46:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_46:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_47:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_47:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_47:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_47:31]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_47:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_47:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_48:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_48:14]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_48:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_48:36]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_48:57]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_48:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_49:18]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_49:19]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_49:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_49:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_50:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_50:1]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_50:22]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_50:23]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_50:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_50:44]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_51:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_51:5]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_51:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_51:26]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_51:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_51:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_52:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_52:9]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_52:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_52:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_52:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_52:52]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_53:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_53:13]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_53:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_53:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_53:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_53:56]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_54:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_54:17]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_54:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_54:39]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_55:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_55:0]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_55:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_55:21]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_55:42]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_55:43]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_56:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_56:4]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_56:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_56:25]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_56:46]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_56:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_57:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_57:8]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_57:29]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_57:30]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_57:50]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_57:51]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_58:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_58:12]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_58:33]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_58:34]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_58:54]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_58:55]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_59:16]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_59:16]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_59:37]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_59:38]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
+[9_12_2015_23_59:58]  [org.telegram.updatesreceivers.UpdatesThread]FINE - []
+[9_12_2015_23_59:59]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1

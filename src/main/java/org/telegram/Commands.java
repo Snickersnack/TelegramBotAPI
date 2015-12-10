@@ -42,5 +42,5 @@ public class Commands {
     public static final String STOPCOMMAND = commandInitChar + "stop";
     public static final String HELPCOMMAND = commandInitChar + "help";
     public static final String MOSTRECENTMATCHCOMMAND = commandInitChar + "riki";
-
+    public static final String YELPCOMMAND = commandInitChar + "yelp";
 }
