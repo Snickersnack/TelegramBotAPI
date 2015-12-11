@@ -74,8 +74,9 @@ public class NewBotHandler implements UpdatesCallback{
 	}
 	
 	public void handleUpdate(Update update) {
-
+		
 	      Message message = update.getMessage();
+	      System.out.println("Message gotten. Chat ID = " + message.getChatId());
 	      CommandParser commandParser = new CommandParser(message);
 	      commandParser.push();
 

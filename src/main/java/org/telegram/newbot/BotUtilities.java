@@ -14,15 +14,21 @@ public class BotUtilities {
 	private String recentCommands = "";
 	
 	public BotUtilities(Message message){
-		
+		this.message = message;
 	}
 	
 	public void sendHelp(){
+		try{
 	SendMessage sendMessageRequest = new SendMessage();
     sendMessageRequest.setChatId(message.getChatId());
     sendMessageRequest.setText("/yelp - Use this format: Search term & location" + System.getProperty("line.separator") +
     		"/riki - returns Ricky's god awful stats on his last match" + System.getProperty("line.separator"));
+    System.out.println("right before sendout");
     SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
 	

@@ -1,6 +1,7 @@
 package org.telegram;
 
 import org.telegram.newbot.NewBotHandler;
+import org.telegram.newbot.YelpCache;
 import org.telegram.updateshandlers.*;
 import org.telegram.updatesreceivers.Webhook;
 
@@ -35,6 +36,7 @@ public class Main {
 //        UpdatesCallback transifexBot = new TransifexHandlers(webhook);
 //        UpdatesCallback filesBot = new FilesHandlers(webhook);
 //        UpdatesCallback directionsBot = new DirectionsHandlers(webhook);
-        UpdatesCallback newBot = new NewBotHandler(webhook);
+        YelpCache.getInstance().init();	
+    	UpdatesCallback newBot = new NewBotHandler(webhook);
     }
 }

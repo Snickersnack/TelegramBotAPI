@@ -30,7 +30,7 @@ public class YelpAuth {
 		    OAuthRequest request = new OAuthRequest(Verb.GET, "http://api.yelp.com/v2/search");
 		    request.addQuerystringParameter("term", term);
 		    request.addQuerystringParameter("location", location);
-		    request.addQuerystringParameter("limit", "3");
+		    request.addQuerystringParameter("limit", "9");
 		    this.service.signRequest(this.accessToken, request);
 		    Response response = request.send();
 		    return response.getBody();
