@@ -1,4 +1,4 @@
-package org.telegram.newbot;
+package org.telegram.newbot.auth;
 
 import org.scribe.builder.ServiceBuilder;
 import org.scribe.model.OAuthRequest;

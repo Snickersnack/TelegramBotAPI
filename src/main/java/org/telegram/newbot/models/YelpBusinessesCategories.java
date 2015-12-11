@@ -1,4 +1,4 @@
-package org.telegram.newbot;
+package org.telegram.newbot.models;
 
 import java.util.List;
 

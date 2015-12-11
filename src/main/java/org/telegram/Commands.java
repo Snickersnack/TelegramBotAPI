@@ -43,4 +43,11 @@ public class Commands {
     public static final String HELPCOMMAND = commandInitChar + "help";
     public static final String MOSTRECENTMATCHCOMMAND = commandInitChar + "riki";
     public static final String YELPCOMMAND = commandInitChar + "yelp";
+    public static final String YELPPOLLCOMMAND = commandInitChar + "yelppoll";
+    public static final String YELPADDCOMMAND = commandInitChar + "yelpadd";
+    public static final String PREVCOMMAND = commandInitChar + "prev";
+    public static final String NEXTCOMMAND = commandInitChar + "next";
+    public static final String RECENTCOMMAND = commandInitChar + "recentcommands";
+    
+
 }
