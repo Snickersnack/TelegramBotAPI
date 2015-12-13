@@ -19,8 +19,9 @@ public class YelpBusinesses {
     private String url; 
     private List<YelpBusinessesCategories> categories;
     private String phone; 
-    private String isClosed;
+    private boolean isClosed;
     private YelpBusinessesLocation location;
+    private String displayPhone;
 
 	public YelpBusinesses(){}
 
@@ -96,11 +97,11 @@ public class YelpBusinesses {
 		this.phone = phone;
 	}
 
-	public String getIsClosed() {
+	public boolean getIsClosed() {
 		return isClosed;
 	}
 	@JsonProperty("is_closed")
-	public void setIsClosed(String isClosed) {
+	public void setIsClosed(boolean isClosed) {
 		this.isClosed = isClosed;
 	}
 
@@ -110,6 +111,14 @@ public class YelpBusinesses {
 	@JsonProperty("location")
 	public void setLocation(YelpBusinessesLocation location) {
 		this.location = location;
+	}
+
+	public String getDisplayPhone() {
+		return displayPhone;
+	}
+	@JsonProperty("display_phone")
+	public void setDisplayPhone(String displayPhone) {
+		this.displayPhone = displayPhone;
 	}
 	
 }

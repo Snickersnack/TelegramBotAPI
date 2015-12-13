@@ -1,4 +1,4 @@
-package org.telegram.newbot;
+package org.telegram.newbot.services;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -8,6 +8,7 @@ import org.telegram.BotConfig;
 import org.telegram.SenderHelper;
 import org.telegram.api.methods.SendMessage;
 import org.telegram.api.objects.Message;
+import org.telegram.newbot.YelpCache;
 import org.telegram.newbot.auth.YelpAuth;
 import org.telegram.newbot.models.NewBotYelpModels;
 
@@ -24,7 +25,6 @@ public class YelpService {
 	private static final String YELPTOKENSECRET = BotConfig.YELPTOKENSECRET;
 	private String location = "";
 	private String term = "";
-	private String wordList = "";
 	private NewBotYelpModels model;
 	private Message message;
 
@@ -37,7 +37,7 @@ public class YelpService {
 	  YelpCache.getInstance().setYelpPageState(0);
 	  System.out.println("beginning of request");
 	  String commandSplit = message.getText();
-	  List<String> items = Arrays.asList(commandSplit.substring(6).split("&"));
+	  List<String> items = Arrays.asList(commandSplit.substring(6).split("@"));
 	  for (int i = 0; i < items.size(); i++) {
 		  
 		  System.out.println(items.get(i));
@@ -65,9 +65,7 @@ public class YelpService {
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
-	System.out.println("Gets to the end of request:" + YelpCache.getInstance().getYelpPageState());
 	YelpCache.getInstance().setYelpList(model.getBusinesses());
-	System.out.println("Gets to the end of request (Here is the size):" + YelpCache.getInstance().getCurrentYelpList().size());
 
 	YelpCache.getInstance().setYelpPageState(1);
 
@@ -77,23 +75,9 @@ public class YelpService {
 		// Create Send message request to Telegram
 		SendMessage sendMessageRequest = new SendMessage();
 		sendMessageRequest.setChatId(message.getChatId());
-//		if (YelpCache.getInstance().getCurrentYelpList().size() == 1) {
-//			sendMessageRequest.setText("Name: "
-//					+ YelpCache.getInstance().getCurrentYelpList().get(0)
-//							.getName()
-//					+ System.getProperty("line.separator")
-//					+ "Rating: "
-//					+ YelpCache.getInstance().getCurrentYelpList().get(0)
-//							.getRating()
-//					+ System.getProperty("line.separator")
-//					+ "URL: "
-//					+ YelpCache.getInstance().getCurrentYelpList().get(0)
-//							.getUrl());
-//			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
-//		}
-//
-//		else {
+		sendMessageRequest.enableMarkdown(true);
 			int count = 0;
+			
 			if (YelpCache.getInstance().getYelpPageState() != 0) {
 				count = (3 * YelpCache.getInstance().getYelpPageState()) - 3;
 			}
@@ -101,22 +85,23 @@ public class YelpService {
 					.size(); i++) {
 				count++;
 
+
 				sendMessageRequest.setText(count
-						+ ".) "
-						+ YelpCache.getInstance().getCurrentYelpList().get(i)
-								.getName()
+						+ ") "
+						+ "[" +YelpCache.getInstance().getCurrentYelpList().get(i)
+								.getName() + "]" + "(" + YelpCache.getInstance().getCurrentYelpList().get(i)
+								.getUrl() + ")"
 						+ System.getProperty("line.separator")
-						+ "  "
 						+ "Rating: "
 						+ YelpCache.getInstance().getCurrentYelpList().get(i)
 								.getRating()
 						+ System.getProperty("line.separator")
-						+ "  "
-						+ "URL: "
-						+ YelpCache.getInstance().getCurrentYelpList().get(i)
-								.getUrl()
-						+ System.getProperty("line.separator")
-						+ System.getProperty("line.separator")
+						+ "Reviews: " 
+						+YelpCache.getInstance().getCurrentYelpList().get(i).getReviewCount()
+						+ System.getProperty("line.separator") 
+
+						+ System.getProperty("line.separator") 
+
 
 				);
 

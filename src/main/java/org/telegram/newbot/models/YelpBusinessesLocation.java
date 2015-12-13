@@ -6,7 +6,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-	
+//Currently not mapped properly, won't return values (null)
+
 public class YelpBusinessesLocation {
 
 	private String city;
