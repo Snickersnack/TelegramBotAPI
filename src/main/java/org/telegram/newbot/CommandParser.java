@@ -1,6 +1,8 @@
 package org.telegram.newbot;
 
+import org.telegram.BotConfig;
 import org.telegram.Commands;
+import org.telegram.SenderHelper;
 import org.telegram.SteamIds;
 import org.telegram.api.methods.SendMessage;
 import org.telegram.api.objects.Message;
@@ -17,6 +19,8 @@ public class CommandParser {
 	private YelpService yelpService;
 	private String command;
 	private Message message;
+	private static final String TOKEN = BotConfig.TOKENNEWBOT;
+
 
 	public CommandParser(Message message) {
 		this.message = message;
@@ -59,6 +63,23 @@ public class CommandParser {
 			dota.setHeroes();
 			dota.setId(SteamIds.BRO);
 			dota.send();
+
+		}
+		else if (command.startsWith(Commands.DISPLAYONCOMMAND)) {
+			YelpCache.getInstance().enableYelpDisplay();
+			SendMessage sendMessageRequest = new SendMessage();
+			sendMessageRequest.setChatId(message.getChatId());
+			sendMessageRequest.setText("Yelp Display On");
+			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+
+		}
+		else if (command.startsWith(Commands.DISPLAYOFFCOMMAND)) {
+			YelpCache.getInstance().disableYelpDisplay();;
+			SendMessage sendMessageRequest = new SendMessage();
+			sendMessageRequest.setChatId(message.getChatId());
+			sendMessageRequest.setText("Yelp Display Off");
+			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+
 
 		}
 

@@ -11,6 +11,7 @@ public class YelpCache {
 	private List<YelpBusinesses> yelpList;
 	private List<YelpBusinesses> currentYelpList;
 	private int yelpPageState = 0;
+	private boolean disableYelpDisplay = false;
 
 	private YelpCache() {
 	}
@@ -29,6 +30,16 @@ public class YelpCache {
 
 	}
 
+	public boolean getYelpDisplay(){
+		return disableYelpDisplay;
+	}
+	public void disableYelpDisplay(){
+		this.disableYelpDisplay = true;
+	}
+	
+	public void enableYelpDisplay(){
+		this.disableYelpDisplay = false;
+	}
 	public void clearYelpCache() {
 		if (yelpList.size() > 0) {
 			this.yelpList.clear();

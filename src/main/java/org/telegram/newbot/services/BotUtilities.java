@@ -24,7 +24,9 @@ public class BotUtilities {
     sendMessageRequest.enableMarkdown(true);
     sendMessageRequest.setText("/yelp - Use this format: *search term* @ *location*" + System.getProperty("line.separator") +
     		"/next - Next page on the most recent yelp search" + System.getProperty("line.separator") + 
-    		"/prev - Previous page on the most recent yelp search" + System.getProperty("line.separator") + 
+    		"/prev - Previous page on the most recent yelp search" + System.getProperty("line.separator") +
+    		"/yelpdisplayon - Enables yelp link display" + System.getProperty("line.separator") + 
+    		"/yelpdisplayoff - Disables yelp link display" + System.getProperty("line.separator") + 
     		"/steam - List of players in chat currently in game on Steam" + System.getProperty("line.separator") + 
     		"/riki - Ricky's scrub stats in his last match" + System.getProperty("line.separator") +
     		"/ray - Ray's scrub stats in his last match" + System.getProperty("line.separator") + 

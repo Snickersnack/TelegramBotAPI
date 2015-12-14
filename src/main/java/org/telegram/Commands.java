@@ -40,6 +40,9 @@ public class Commands {
     public static final String setLanguageCommand = commandInitChar + "language";
 
     public static final String STOPCOMMAND = commandInitChar + "stop";
+
+    public static final String DISPLAYONCOMMAND = commandInitChar + "yelpdisplayon";
+    public static final String DISPLAYOFFCOMMAND = commandInitChar + "yelpdisplayoff";
     public static final String MENUCOMMAND = commandInitChar + "menu";
     public static final String RIKICOMMAND = commandInitChar + "riki";
     public static final String JDEACOMMAND = commandInitChar + "jdea";

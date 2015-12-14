@@ -15,7 +15,6 @@ import org.telegram.api.methods.SendMessage;
 import org.telegram.api.objects.Message;
 import org.telegram.newbot.models.DotaHeroes;
 import org.telegram.newbot.models.DotaHeroesDetail;
-import org.telegram.newbot.models.DotaHeroesResponseModel;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wilson.data.client.SteamApi;
@@ -56,16 +55,11 @@ public class DotaService {
 	}
 
 	public void setHeroes() {
-		// HeroesRequest heroRequest = new HeroesRequest();
-		// DotaHeroes heroResponse = (DotaHeroes) api
-		// .execute(heroRequest);
-
 		client = HttpClients.createDefault();
 		HttpGet heroRequest = new HttpGet(
 				"https://api.steampowered.com/IEconDOTA2_570/GetHeroes/v0001/?key=029021F53D5F974DA73A60F9300C3CF5&language=en_us");
 		try {
 			entity = client.execute(heroRequest).getEntity();
-
 			if (entity == null) {
 				System.out.println("Entity null");
 			} else {
@@ -172,6 +166,7 @@ public class DotaService {
 						+ "[Dotabuff Match Stats]"
 						+ "(http://www.dotabuff.com/matches/" + mostRecentMatch
 						+ ")";
+				
 				System.out.println(sendOutput);
 				SendMessage sendMessageRequest = new SendMessage();
 				sendMessageRequest.setChatId(message.getChatId());

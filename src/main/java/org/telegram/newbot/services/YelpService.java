@@ -110,6 +110,7 @@ public class YelpService {
 								.getRating()
 						+ System.getProperty("line.separator"));
 				
+				sendMessageRequest.setDisableWebPagePreview(YelpCache.getInstance().getYelpDisplay());
 				SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 			}
 		}
