@@ -37,6 +37,7 @@ public class CommandParser {
 			try{
 				System.out.println("riki command");
 			DotaService dota = new DotaService(message);
+			dota.setHeroes();
 			dota.setId(SteamIds.RIKI);
 			dota.send();
 			}
@@ -48,12 +49,14 @@ public class CommandParser {
 		
 		else if (command.startsWith(Commands.JDEACOMMAND)) {
 			DotaService dota = new DotaService(message);
+			dota.setHeroes();
 			dota.setId(SteamIds.JDEA);
 			dota.send();
 
 		}
 		else if (command.startsWith(Commands.RAYCOMMAND)) {
 			DotaService dota = new DotaService(message);
+			dota.setHeroes();
 			dota.setId(SteamIds.BRO);
 			dota.send();
 
