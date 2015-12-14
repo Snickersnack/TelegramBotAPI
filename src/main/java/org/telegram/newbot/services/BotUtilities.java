@@ -39,14 +39,5 @@ public class BotUtilities {
 	}
 	
 	
-	public void sendRecent(List<String> mostRecentCommands){
-	SendMessage sendMessageRequest = new SendMessage();
-    sendMessageRequest.setChatId(message.getChatId());
-    for (int i=0; i<mostRecentCommands.size(); i++){
-    	recentCommands.concat(mostRecentCommands.get(i) + System.getProperty("line.separator"));
-    	System.out.println(mostRecentCommands.get(i));
-    }
-    sendMessageRequest.setText("Most Recent Commands: " + System.getProperty("line.separator") + recentCommands);
-    SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
-	}
+
 }
