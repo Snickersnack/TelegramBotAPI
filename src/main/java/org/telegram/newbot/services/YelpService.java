@@ -113,6 +113,11 @@ public class YelpService {
 				sendMessageRequest.setDisableWebPagePreview(YelpCache.getInstance().getYelpDisplay());
 				SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 			}
+			SendMessage sendMessageRequest1 = new SendMessage();
+			sendMessageRequest1.setChatId(message.getChatId());
+			sendMessageRequest1.setText("/next for more /prev for last page");
+			SenderHelper.SendApiMethod(sendMessageRequest1, TOKEN);
+
 		}
 //	}
 }
