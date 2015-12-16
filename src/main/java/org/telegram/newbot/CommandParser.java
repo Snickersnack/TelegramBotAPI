@@ -65,6 +65,36 @@ public class CommandParser {
 			dota.send();
 
 		}
+		else if (command.startsWith(Commands.ELTONCOMMAND)) {
+			DotaService dota = new DotaService(message);
+			dota.setHeroes();
+			dota.setId(SteamIds.ELTON);
+			dota.send();
+
+		}
+		else if (command.startsWith(Commands.DAVIDCOMMAND)) {
+			DotaService dota = new DotaService(message);
+			dota.setHeroes();
+			dota.setId(SteamIds.DAVID);
+			dota.send();
+
+		}
+		else if (command.startsWith(Commands.CALVINCOMMAND)) {
+			SendMessage sendMessageRequest = new SendMessage();
+			sendMessageRequest.setChatId(message.getChatId());
+			sendMessageRequest.setText("https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png");
+			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+
+			
+
+		}
+		else if (command.startsWith(Commands.CHRISCOMMAND)) {
+			DotaService dota = new DotaService(message);
+			dota.setHeroes();
+			dota.setId(SteamIds.CHRIS);
+			dota.send();
+
+		}
 		else if (command.startsWith(Commands.DISPLAYONCOMMAND)) {
 			YelpCache.getInstance().enableYelpDisplay();
 			SendMessage sendMessageRequest = new SendMessage();

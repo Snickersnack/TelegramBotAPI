@@ -46,6 +46,10 @@ public class Commands {
     public static final String MENUCOMMAND = commandInitChar + "menu";
     public static final String RIKICOMMAND = commandInitChar + "riki";
     public static final String JDEACOMMAND = commandInitChar + "jdea";
+    public static final String DAVIDCOMMAND = commandInitChar + "david";
+    public static final String CHRISCOMMAND = commandInitChar + "chris";
+    public static final String CALVINCOMMAND = commandInitChar + "calvin";
+    public static final String ELTONCOMMAND = commandInitChar + "elton";
     public static final String RAYCOMMAND = commandInitChar + "ray";
     public static final String YELPCOMMAND = commandInitChar + "yelp";
     public static final String YELPPOLLCOMMAND = commandInitChar + "yelppoll";

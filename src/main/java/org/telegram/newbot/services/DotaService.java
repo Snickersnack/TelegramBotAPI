@@ -67,6 +67,7 @@ public class DotaService {
 	private int  lowestDmgHeroId;
 	private List<SteamPlayer> steamPlayerList;
 	private Map<String, String> queryMap;
+	MatchHistoryResponse matchHistoryResponse;
 
 	
 	
@@ -120,7 +121,7 @@ public class DotaService {
 		// get latest matches
 		DotaGetMatchHistoryRequest request = new DotaGetMatchHistoryRequest();
 		request.setAccountId(dota32Id);
-		MatchHistoryResponse matchHistoryResponse = (MatchHistoryResponse) api
+		matchHistoryResponse = (MatchHistoryResponse) api
 				.execute(request);
 		mostRecentMatch = matchHistoryResponse.getResult().getMatches().get(0)
 				.getMatchId();
@@ -259,26 +260,29 @@ public class DotaService {
 				+ "/" + players.get(matchDetailHero).getDeaths()
 				+ "/" + players.get(matchDetailHero).getAssists()
 				+ System.getProperty("line.separator") 
-				+ playerPersonaName + " Hero Damage: " + players.get(matchDetailHero).getHeroDamage() + " (" + this.highestHeroDamage + " - " + this.lowestHeroDamage + ")"
+				+ playerPersonaName + " Hero Damage: " + players.get(matchDetailHero).getHeroDamage() + " (" + this.highestHeroDamage + " - " + this.lowestHeroDamage + ")" 
 				+ System.getProperty("line.separator")
 				+ playerPersonaName + " GPM: " + players.get(matchDetailHero).getGoldPerMin() + " (" + this.highestGpm + " - " + this.lowestGpm + ")"
 				+ System.getProperty("line.separator")
-				+ "Highest Hero Dmg: " + this.highestDmgPlayer + " (" + this.highestDmgHero + ")" 
+				+ "Highest Hero Dmg: " + this.highestDmgPlayer + " /" + this.highestDmgHero + "/" + this.highestHeroDamage
 				+ System.getProperty("line.separator") 
-				+ "Lowest Hero Dmg: " + this.lowestDmgPlayer + " (" + this.lowestDmgHero  + ")" 
+				+ "Lowest Hero Dmg: " + this.lowestDmgPlayer + " /" + this.lowestDmgHero  + "/" + this.lowestHeroDamage
 				+ System.getProperty("line.separator") 
-				+ "Highest GPM: " + this.highestGpmPlayer + " (" + this.highestGpmHero + ")" 
+				+ "Highest GPM: " + this.highestGpmPlayer + " /" + this.highestGpmHero + "/" + this.highestGpm
 				+ System.getProperty("line.separator")
-				+ "Lowest GPM: " + this.lowestGpmPlayer + " (" + this.lowestGpmHero+ ")" 
+				+ "Lowest GPM: " + this.lowestGpmPlayer + " /" + this.lowestGpmHero+ "/" + this.lowestGpm
 				+ System.getProperty("line.separator")
 
 		+ "Win/Lose: " + matchResult 
 		+ System.getProperty("line.separator")
-		+ "Duration of match: " + matchDetailResponse.getResult().getDuration()
+		+ "Duration of match: " + String.format("%02d", matchDetailResponse.getResult().getDuration() / 60) + ":" + String.format("%02d", matchDetailResponse.getResult().getDuration() % 60)
 		+ System.getProperty("line.separator")
 		+ "[Dotabuff Match Stats]"
 		+ "(http://www.dotabuff.com/matches/" + mostRecentMatch
 		+ ")";
+		if(matchHistoryResponse == null){
+			sendOutput = "Unable to reach steamAPI";
+		}
 		System.out.println(sendOutput);
 		SendMessage sendMessageRequest = new SendMessage();
 		sendMessageRequest.setDisableWebPagePreview(true);
