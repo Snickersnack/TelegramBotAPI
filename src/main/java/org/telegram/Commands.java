@@ -49,6 +49,8 @@ public class Commands {
     public static final String DAVIDCOMMAND = commandInitChar + "david";
     public static final String CHRISCOMMAND = commandInitChar + "chris";
     public static final String CALVINCOMMAND = commandInitChar + "calvin";
+    public static final String WILSONCOMMAND = commandInitChar + "wilson";
+
     public static final String ELTONCOMMAND = commandInitChar + "elton";
     public static final String RAYCOMMAND = commandInitChar + "ray";
     public static final String YELPCOMMAND = commandInitChar + "yelp";

@@ -88,6 +88,14 @@ public class CommandParser {
 			
 
 		}
+		else if (command.startsWith(Commands.WILSONCOMMAND)) {
+			DotaService dota = new DotaService(message);
+			dota.setHeroes();
+			dota.setId(SteamIds.WILSON);
+			dota.send();
+
+		}
+		
 		else if (command.startsWith(Commands.CHRISCOMMAND)) {
 			DotaService dota = new DotaService(message);
 			dota.setHeroes();
