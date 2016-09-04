@@ -1,6 +1,0 @@
-[4_9_2016_0_12:40]  [org.telegram.SenderHelper]FINE - {"ok":true,"result":true,"description":"There is no webhook to delete"}
-[4_9_2016_0_12:40]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
-[4_9_2016_0_12:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":917372231,"message":{"date":1472973166,"chat":{"last_name":"Tan","id":163396337,"type":"private","first_name":"Wilson","username":"snickersnack"},"message_id":2436,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson","username":"snickersnack"},"text":"omg"}}]
-[4_9_2016_0_12:47]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
-[4_9_2016_0_12:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - [{"update_id":917372232,"message":{"date":1472973168,"chat":{"last_name":"Tan","id":163396337,"type":"private","first_name":"Wilson","username":"snickersnack"},"message_id":2437,"from":{"last_name":"Tan","id":163396337,"first_name":"Wilson","username":"snickersnack"},"text":"done??"}}]
-[4_9_2016_0_12:48]  [org.telegram.updatesreceivers.UpdatesThread]FINE - POST https://api.telegram.org/bot99536655:AAG_uycvQeXgm-1Cdpk-zvBRUu2w_nz5p1Y/getupdates HTTP/1.1
