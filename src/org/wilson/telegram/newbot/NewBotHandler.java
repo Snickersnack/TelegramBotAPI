@@ -8,26 +8,15 @@ import org.telegram.updateshandlers.UpdatesCallback;
 import org.telegram.updatesreceivers.UpdatesThread;
 import org.telegram.updatesreceivers.Webhook;
 import org.wilson.telegram.BotConfig;
-import org.wilson.telegram.newbot.models.NewBotYelpModels;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class NewBotHandler implements UpdatesCallback{
-	private Long mostRecentMatch;
     private static final String TOKEN = BotConfig.TOKENNEWBOT;
     private static final String BOTNAME = BotConfig.USERNAMENEWBOT;
-    private static final String CONSUMERKEY = BotConfig.CONSUMERKEY;
-    private static final String CONSUMERSECRET = BotConfig.CONSUMERSECRET;
-    private static final String YELPTOKEN = BotConfig.YELPTOKEN;
-    private static final String YELPTOKENSECRET = BotConfig.YELPTOKENSECRET;
-    private String location = "";
-    private String term = "";
-    private String wordList = "";
-    private NewBotYelpModels model;
+
 	ObjectMapper mapper = new ObjectMapper();
-	private String jsonInString = "";
-	private String rikiId = (Long.parseLong("76561198000302345") - (Long.parseLong("76561197960265728")) + "");
-	private int utilityId;
+
 	
 
     private static final boolean USEWEBHOOK = false;

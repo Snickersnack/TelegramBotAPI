@@ -10,6 +10,11 @@ import org.wilson.telegram.newbot.models.DotaHeroes;
 import com.wilson.data.client.UriUtils;
 import com.wilson.data.client.user.SteamRequest;
 
+/**
+ * Service to pull the most updated list of heroes in Dota
+ * 
+ */
+
 
 public class HeroesRequest implements SteamRequest{
 

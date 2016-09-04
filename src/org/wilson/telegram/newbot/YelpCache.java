@@ -5,6 +5,11 @@ import java.util.List;
 
 import org.wilson.telegram.newbot.models.YelpBusinesses;
 
+/**
+ * Singleton cache for the Yelp service
+ * Includes settings to toggle yelp link displays
+ */
+
 public class YelpCache {
 
 	private static YelpCache yelpCache = new YelpCache();
@@ -64,7 +69,6 @@ public class YelpCache {
 		return yelpList;
 	}
 
-	// Need to fix. This will break if it returns 4, 5, 7, 8 results
 	public List<YelpBusinesses> getCurrentYelpList() {
 		switch (this.yelpPageState) {
 		case 0:

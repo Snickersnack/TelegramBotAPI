@@ -12,10 +12,11 @@ public class NewBotYelpModels {
 	
 	private List<YelpBusinesses> businesses;
 	private int total;
-	private List<RegionModel> region;
+//	private List<RegionModel> region;
 	
 	public NewBotYelpModels(){}
-	
+
+//If regions are needed:
 //	public List<RegionModel> getRegion() {
 //		return region;
 //	}

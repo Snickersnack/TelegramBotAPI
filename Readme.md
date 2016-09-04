@@ -8,8 +8,7 @@ Dota functionality grabs latest game a player has played based on steamID
 ## Telegram Bot API
 Built on top of the Java API telegram wrapper located here: https://github.com/rubenlagus/TelegramBots
 
-Made for use with friends 
-
+**Note that this bot is meant for private use. The steam IDs for querying have been hard coded into the application. Adding and persisting extra steam IDs would require a database, which was not the original intent of this project.
 
 
 

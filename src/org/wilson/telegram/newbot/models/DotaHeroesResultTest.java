@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Model for the incoming json request made by HeroesRequest
+ * 
+ */
+
 public class DotaHeroesResultTest {
 
 	private List<DotaHeroesDetail> dotaHeroes;

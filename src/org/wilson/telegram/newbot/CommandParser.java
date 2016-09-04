@@ -1,18 +1,22 @@
 package org.wilson.telegram.newbot;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import org.telegram.BotConfig;
-import org.telegram.Commands;
-import org.telegram.SenderHelper;
-import org.telegram.SteamIds;
-import org.telegram.api.methods.SendMessage;
-import org.telegram.api.objects.Message;
+
+import org.wilson.telegram.BotConfig;
+import org.wilson.telegram.Commands;
+import org.wilson.telegram.SteamIds;
 import org.wilson.telegram.newbot.services.BotUtilities;
 import org.wilson.telegram.newbot.services.DotaService;
 import org.wilson.telegram.newbot.services.SteamService;
 import org.wilson.telegram.newbot.services.YelpService;
+import org.telegram.SenderHelper;
+import org.telegram.api.methods.SendMessage;
+import org.telegram.api.objects.Message;
+
+/**
+ * Service to parse commands
+ * 
+ */
 
 
 // Takes in the message and parses for command
@@ -21,12 +25,14 @@ import org.wilson.telegram.newbot.services.YelpService;
 public class CommandParser {
 
 	private YelpService yelpService;
+	private DotaService dota;
 	private String command;
 	private Message message;
 	private static final String TOKEN = BotConfig.TOKENNEWBOT;
-	private static String steamIdRegex = "/(RIKI|JDEA|WILSON|ELTON|CHRIS|RAYMOND)\\s(RIKI|JDEA|WILSON|ELTON|CHRIS|RAYMOND)/i";
 	public CommandParser(Message message) {
 		this.message = message;
+		dota = new DotaService(message);
+		dota.setHeroes();
 	}
 
 	// Push commands to service classes
@@ -40,12 +46,15 @@ public class CommandParser {
 			utilities.sendMenu();
 		}
 		
+		
+		else if (command.startsWith(Commands.USERSCOMMAND)) {
+			BotUtilities utilities = new BotUtilities(message);
+			utilities.sendUsers();
 
+		}
+		
 		else if (command.startsWith(Commands.RIKICOMMAND)) {
 			try{
-				System.out.println("riki command");
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.RIKI);
 			dota.send();
 			}
@@ -55,36 +64,25 @@ public class CommandParser {
 		}
 		
 		else if (command.startsWith(Commands.JDEACOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.JDEA);
 			dota.send();
 
 		}
 		else if (command.startsWith(Commands.RAYCOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.BRO);
 			dota.send();
 
 		}
 		else if (command.startsWith(Commands.ELTONCOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.ELTON);
 			dota.send();
 
 		}
 		else if (command.startsWith(Commands.DAVIDCOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.DAVID);
 			dota.send();
 		}
-		else if (command.startsWith(Commands.COMBOCOMMAND)) {
-		
-		}
-		
+
 		else if (command.startsWith(Commands.CALVINCOMMAND)) {
 			SendMessage sendMessageRequest = new SendMessage();
 			sendMessageRequest.setChatId(message.getChatId());
@@ -93,16 +91,12 @@ public class CommandParser {
 
 		}
 		else if (command.startsWith(Commands.WILSONCOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.WILSON);
 			dota.send();
 
 		}
 		
 		else if (command.startsWith(Commands.CHRISCOMMAND)) {
-			DotaService dota = new DotaService(message);
-			dota.setHeroes();
 			dota.setId(SteamIds.CHRIS);
 			dota.send();
 
@@ -193,5 +187,7 @@ public class CommandParser {
 			steamService.send();
 
 		}
+		
+
 	}
 }

@@ -5,6 +5,13 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
+/**
+ * Model for the incoming json request made by the YelpService
+ * 
+ */
+
+
 @JsonIgnoreProperties(ignoreUnknown = true, value = {"categories", "location"} )
 
 

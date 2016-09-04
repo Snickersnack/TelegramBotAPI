@@ -30,7 +30,11 @@ import com.wilson.data.client.user.response.SteamPlayerSummary;
 import com.wilson.data.shared.MatchDetailPlayer;
 
 
-
+/**
+ * Makes several API calls to steam and parses the response
+ * Leverages some classes from the dota steam app
+ * Returns a formatted breakdown of the last match of the user
+ */
 
 
 public class DotaService {
@@ -81,6 +85,10 @@ public class DotaService {
 
 	public DotaService(Message message) {
 		this.message = message;
+	}
+	
+	public void setMessage(Message message){
+		this.message = message;	
 	}
 
 	public void setId(String id) {

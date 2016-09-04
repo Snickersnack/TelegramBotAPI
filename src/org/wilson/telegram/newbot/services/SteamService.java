@@ -11,6 +11,10 @@ import com.wilson.data.client.user.SteamGetPlayerSummaryRequest;
 import com.wilson.data.client.user.response.SteamPlayer;
 import com.wilson.data.client.user.response.SteamPlayerSummary;
 
+/**
+ * Polls for the online status of all existing users currently in a game
+ * 
+ */
 public class SteamService {
 
 

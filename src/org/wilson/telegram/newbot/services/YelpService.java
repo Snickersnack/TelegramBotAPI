@@ -16,6 +16,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Makes a call to the Yelp API and returns search results based on parameters passed in the command
+ * 
+ * 
+ */
+
 public class YelpService {
 	private static final String TOKEN = BotConfig.TOKENNEWBOT;
 	private static final String BOTNAME = BotConfig.USERNAMENEWBOT;
@@ -66,7 +72,6 @@ public class YelpService {
 		e.printStackTrace();
 	}
 	YelpCache.getInstance().setYelpList(model.getBusinesses());
-
 	YelpCache.getInstance().setYelpPageState(1);
 
 }
