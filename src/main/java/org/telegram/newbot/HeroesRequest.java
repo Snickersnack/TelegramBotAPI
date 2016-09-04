@@ -7,6 +7,9 @@ import java.util.Map;
 import org.apache.http.NameValuePair;
 import org.telegram.newbot.models.DotaHeroes;
 
+import com.wilson.data.client.UriUtils;
+import com.wilson.data.client.user.SteamRequest;
+
 
 public class HeroesRequest implements SteamRequest{
 
