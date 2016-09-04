@@ -61,6 +61,5 @@ public class Commands {
     public static final String PREVCOMMAND = commandInitChar + "prev";
     public static final String NEXTCOMMAND = commandInitChar + "next";
     public static final String STEAMCOMMAND = commandInitChar + "steam";
-    //test ASDFALKSDJFALKSDFJKASF
 
 }
