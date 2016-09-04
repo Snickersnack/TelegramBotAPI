@@ -10,7 +10,10 @@ import org.telegram.newbot.models.DotaHeroes;
 import com.wilson.data.client.UriUtils;
 import com.wilson.data.client.user.SteamRequest;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 public class HeroesRequest implements SteamRequest{
 
 	private Map<String, String> parameters = new HashMap<String, String>();
@@ -23,11 +26,19 @@ public class HeroesRequest implements SteamRequest{
 		return "/IEconDOTA2_570";
 	}
 
+<<<<<<< HEAD
 //	@Override
 //	public String getSteamMethod() {
 //		// TODO Auto-generated method stub
 //		return "/GetHeroes";
 //	}
+=======
+	@Override
+	public String getSteamMethod() {
+		// TODO Auto-generated method stub
+		return "/GetHeroes";
+	}
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
 	@Override
 	public String getSteamMethodVersion() {
@@ -47,11 +58,14 @@ public class HeroesRequest implements SteamRequest{
 		return UriUtils.stringMapToNameValuePairs(parameters);
 	}
 
+<<<<<<< HEAD
 	@Override
 	public String getSteamMethod() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
 }

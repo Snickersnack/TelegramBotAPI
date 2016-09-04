@@ -1,8 +1,11 @@
 package org.telegram.newbot;
 
+<<<<<<< HEAD
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 import org.telegram.BotConfig;
 import org.telegram.Commands;
 import org.telegram.SenderHelper;
@@ -14,7 +17,10 @@ import org.telegram.newbot.services.DotaService;
 import org.telegram.newbot.services.SteamService;
 import org.telegram.newbot.services.YelpService;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 // Takes in the message and parses for command
 // Runs service based on command match
 
@@ -24,7 +30,12 @@ public class CommandParser {
 	private String command;
 	private Message message;
 	private static final String TOKEN = BotConfig.TOKENNEWBOT;
+<<<<<<< HEAD
 	private static String steamIdRegex = "/(RIKI|JDEA|WILSON|ELTON|CHRIS|RAYMOND)\\s(RIKI|JDEA|WILSON|ELTON|CHRIS|RAYMOND)/i";
+=======
+
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 	public CommandParser(Message message) {
 		this.message = message;
 	}
@@ -33,13 +44,20 @@ public class CommandParser {
 
 	public void push() {
 		command = message.getText().toLowerCase();
+<<<<<<< HEAD
 	      	    
+=======
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		if (command.startsWith(Commands.MENUCOMMAND)
 				&& command.substring(0, 5).equals("/menu")) {
 			BotUtilities utilities = new BotUtilities(message);
 			utilities.sendMenu();
 		}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
 		else if (command.startsWith(Commands.RIKICOMMAND)) {
 			try{
@@ -52,6 +70,10 @@ public class CommandParser {
 			catch(Exception e){
 				e.printStackTrace();
 			}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		}
 		
 		else if (command.startsWith(Commands.JDEACOMMAND)) {
@@ -80,17 +102,27 @@ public class CommandParser {
 			dota.setHeroes();
 			dota.setId(SteamIds.DAVID);
 			dota.send();
+<<<<<<< HEAD
 		}
 		else if (command.startsWith(Commands.COMBOCOMMAND)) {
 		
 		}
 		
+=======
+
+		}
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		else if (command.startsWith(Commands.CALVINCOMMAND)) {
 			SendMessage sendMessageRequest = new SendMessage();
 			sendMessageRequest.setChatId(message.getChatId());
 			sendMessageRequest.setText("https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png");
 			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 
+<<<<<<< HEAD
+=======
+			
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		}
 		else if (command.startsWith(Commands.WILSONCOMMAND)) {
 			DotaService dota = new DotaService(message);

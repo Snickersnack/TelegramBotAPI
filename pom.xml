@@ -7,7 +7,11 @@
     <groupId>BotApi</groupId>
     <artifactId>org.telegram.botapi</artifactId>
     <version>1.0</version>
+<<<<<<< HEAD
   <packaging>war</packaging>
+=======
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -15,10 +19,15 @@
         <httpcompontents.version>4.5.1</httpcompontents.version>
     </properties>
 
+<<<<<<< HEAD
 
     <dependencyManagement>
         <dependencies>
  
+=======
+    <dependencyManagement>
+        <dependencies>
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
             <dependency>
                 <groupId>org.glassfish.jersey</groupId>
                 <artifactId>jersey-bom</artifactId>
@@ -74,12 +83,16 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.36</version>
         </dependency>
+<<<<<<< HEAD
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+=======
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
         <dependency>
 	<groupId>org.scribe</groupId>
 	<artifactId>scribe</artifactId>

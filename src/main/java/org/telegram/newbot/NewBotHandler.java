@@ -1,16 +1,45 @@
 package org.telegram.newbot;
 
+<<<<<<< HEAD
 import org.telegram.BotConfig;
 import org.telegram.SenderHelper;
 import org.telegram.api.methods.BotApiMethod;
 import org.telegram.api.objects.Message;
 import org.telegram.api.objects.Update;
+=======
+import java.io.IOException;
+import java.util.Collection;
+import java.util.List;
+
+import org.telegram.BotConfig;
+import org.telegram.Commands;
+import org.telegram.SenderHelper;
+import org.telegram.api.methods.BotApiMethod;
+import org.telegram.api.methods.SendMessage;
+import org.telegram.api.objects.Message;
+import org.telegram.api.objects.Update;
+import org.telegram.newbot.auth.YelpAuth;
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 import org.telegram.newbot.models.NewBotYelpModels;
 import org.telegram.updateshandlers.UpdatesCallback;
 import org.telegram.updatesreceivers.UpdatesThread;
 import org.telegram.updatesreceivers.Webhook;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.databind.ObjectMapper;
+=======
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.wilson.data.client.SteamApi;
+import com.wilson.data.client.dota.DotaGetMatchDetailsRequest;
+import com.wilson.data.client.dota.DotaGetMatchHistoryRequest;
+import com.wilson.data.client.dota.response.MatchDetailResponse;
+import com.wilson.data.client.dota.response.MatchHistoryResponse;
+import com.wilson.data.shared.MatchDetailPlayer;
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
 public class NewBotHandler implements UpdatesCallback{
 	private Long mostRecentMatch;
@@ -42,6 +71,10 @@ public class NewBotHandler implements UpdatesCallback{
         }
     }
 	
+<<<<<<< HEAD
+=======
+	@Override
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 	public void onUpdateReceived(Update update) {
 		// TODO Auto-generated method stub
         handleUpdate(update);
@@ -49,6 +82,10 @@ public class NewBotHandler implements UpdatesCallback{
 	}
 
 
+<<<<<<< HEAD
+=======
+	@Override
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 	public BotApiMethod onWebhookUpdateReceived(Update update) {
 		// TODO Auto-generated method stub
 		return null;

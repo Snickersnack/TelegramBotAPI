@@ -1,5 +1,9 @@
 package org.telegram.newbot.models;
 
+<<<<<<< HEAD
+=======
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 

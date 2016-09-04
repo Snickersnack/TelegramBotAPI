@@ -29,10 +29,13 @@ import com.wilson.data.client.user.response.SteamPlayer;
 import com.wilson.data.client.user.response.SteamPlayerSummary;
 import com.wilson.data.shared.MatchDetailPlayer;
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 public class DotaService {
 	private Message message;
 	private Long mostRecentMatch;
@@ -122,7 +125,10 @@ public class DotaService {
 	}
 
 	public void send() {
+<<<<<<< HEAD
 		try{
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		// get latest matches
 		DotaGetMatchHistoryRequest request = new DotaGetMatchHistoryRequest();
 		request.setAccountId(dota32Id);
@@ -135,7 +141,10 @@ public class DotaService {
 
 		MatchDetailResponse matchDetailResponse = (MatchDetailResponse) api
 				.execute(matchRequest);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		List<MatchDetailPlayer> players = matchDetailResponse.getResult()
 				.getPlayers();
 
@@ -263,13 +272,19 @@ public class DotaService {
 				+ "Hero: " + heroName 
 				+ System.getProperty("line.separator")
 				+ "KDA: " + players.get(matchDetailHero).getKills()
+<<<<<<< HEAD
 				+ "|" + players.get(matchDetailHero).getDeaths()
 				+ "|" + players.get(matchDetailHero).getAssists()
+=======
+				+ "/" + players.get(matchDetailHero).getDeaths()
+				+ "/" + players.get(matchDetailHero).getAssists()
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 				+ System.getProperty("line.separator") 
 				+ playerPersonaName + " Hero Damage: " + players.get(matchDetailHero).getHeroDamage() + " (" + this.highestHeroDamage + " - " + this.lowestHeroDamage + ")" 
 				+ System.getProperty("line.separator")
 				+ playerPersonaName + " GPM: " + players.get(matchDetailHero).getGoldPerMin() + " (" + this.highestGpm + " - " + this.lowestGpm + ")"
 				+ System.getProperty("line.separator")
+<<<<<<< HEAD
 				+ "Highest Hero Dmg: " + this.highestDmgPlayer + " |" + this.highestDmgHero + "|" + this.highestHeroDamage
 				+ System.getProperty("line.separator") 
 				+ "Lowest Hero Dmg: " + this.lowestDmgPlayer + " |" + this.lowestDmgHero  + "|" + this.lowestHeroDamage
@@ -277,14 +292,28 @@ public class DotaService {
 				+ "Highest GPM: " + this.highestGpmPlayer + " |" + this.highestGpmHero + "|" + this.highestGpm
 				+ System.getProperty("line.separator")
 				+ "Lowest GPM: " + this.lowestGpmPlayer + " |" + this.lowestGpmHero+ "|" + this.lowestGpm
+=======
+				+ "Highest Hero Dmg: " + this.highestDmgPlayer + " /" + this.highestDmgHero + "/" + this.highestHeroDamage
+				+ System.getProperty("line.separator") 
+				+ "Lowest Hero Dmg: " + this.lowestDmgPlayer + " /" + this.lowestDmgHero  + "/" + this.lowestHeroDamage
+				+ System.getProperty("line.separator") 
+				+ "Highest GPM: " + this.highestGpmPlayer + " /" + this.highestGpmHero + "/" + this.highestGpm
+				+ System.getProperty("line.separator")
+				+ "Lowest GPM: " + this.lowestGpmPlayer + " /" + this.lowestGpmHero+ "/" + this.lowestGpm
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 				+ System.getProperty("line.separator")
 
 		+ "Win/Lose: " + matchResult 
 		+ System.getProperty("line.separator")
 		+ "Duration of match: " + String.format("%02d", matchDetailResponse.getResult().getDuration() / 60) + ":" + String.format("%02d", matchDetailResponse.getResult().getDuration() % 60)
 		+ System.getProperty("line.separator")
+<<<<<<< HEAD
 		+ "[Yasp Match Stats]"
 		+ "(https://yasp.co/matches/" + mostRecentMatch
+=======
+		+ "[Dotabuff Match Stats]"
+		+ "(http://www.dotabuff.com/matches/" + mostRecentMatch
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 		+ ")";
 		if(matchHistoryResponse == null){
 			sendOutput = "Unable to reach steamAPI";
@@ -296,6 +325,7 @@ public class DotaService {
 		sendMessageRequest.enableMarkdown(true);
 		sendMessageRequest.setText(sendOutput);
 		SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+<<<<<<< HEAD
 		}
 		catch(Exception e){
 			sendOutput = "Unable to reach Steam API";
@@ -308,5 +338,7 @@ public class DotaService {
 			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 			e.printStackTrace();
 		}
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 	}
 }

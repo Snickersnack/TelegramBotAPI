@@ -50,8 +50,11 @@ public class Commands {
     public static final String CHRISCOMMAND = commandInitChar + "chris";
     public static final String CALVINCOMMAND = commandInitChar + "calvin";
     public static final String WILSONCOMMAND = commandInitChar + "wilson";
+<<<<<<< HEAD
     public static final String COMBOCOMMAND = commandInitChar + "combos";
 
+=======
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
     public static final String ELTONCOMMAND = commandInitChar + "elton";
     public static final String RAYCOMMAND = commandInitChar + "ray";
@@ -61,5 +64,10 @@ public class Commands {
     public static final String PREVCOMMAND = commandInitChar + "prev";
     public static final String NEXTCOMMAND = commandInitChar + "next";
     public static final String STEAMCOMMAND = commandInitChar + "steam";
+<<<<<<< HEAD
+=======
+    public static final String JDEAWASHERECOMMAND = commandInitChar + "jdeatabase";
+    
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 
 }

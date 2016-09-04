@@ -1,5 +1,10 @@
 package org.telegram.newbot.services;
 
+<<<<<<< HEAD
+=======
+import java.util.List;
+
+>>>>>>> 4313ba29a2a9b55d5052e7787c2fd41b911725c8
 import org.telegram.BotConfig;
 import org.telegram.SenderHelper;
 import org.telegram.api.methods.SendMessage;
