@@ -40,14 +40,14 @@ public class CommandParser {
 	public void push() {
 		command = message.getText().toLowerCase();
 	      	    
-		if (command.startsWith(Commands.MENUCOMMAND)
-				&& command.substring(0, 5).equals("/menu")) {
+		if (command.startsWith(Commands.HELPCOMMAND)
+				&& command.substring(0, 5).equals("/help")) {
 			BotUtilities utilities = new BotUtilities(message);
-			utilities.sendMenu();
+			utilities.sendHelp();
 		}
 		
 		
-		else if (command.startsWith(Commands.USERSCOMMAND)) {
+		if (command.startsWith(Commands.USERSCOMMAND)) {
 			BotUtilities utilities = new BotUtilities(message);
 			utilities.sendUsers();
 
@@ -96,11 +96,6 @@ public class CommandParser {
 
 		}
 		
-		else if (command.startsWith(Commands.CHRISCOMMAND)) {
-			dota.setId(SteamIds.CHRIS);
-			dota.send();
-
-		}
 		else if (command.startsWith(Commands.DISPLAYONCOMMAND)) {
 			YelpCache.getInstance().enableYelpDisplay();
 			SendMessage sendMessageRequest = new SendMessage();
@@ -126,17 +121,21 @@ public class CommandParser {
 				SendMessage sendMessageRequest = new SendMessage();
 				sendMessageRequest.setChatId(message.getChatId());
 				sendMessageRequest.setText("Please do a yelp search");
+				SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 				break;
 			case 1:
 				return;
-			case 2:
+			case 2:				
 				YelpCache.getInstance().setYelpPageState(1);
+				yelpService.send();
+
 				break;
 			case 3:
 				YelpCache.getInstance().setYelpPageState(2);
+				yelpService.send();
+
 				break;
 			}
-			yelpService.send();
 
 		} else if (command.startsWith(Commands.NEXTCOMMAND)) {
 			this.yelpService = new YelpService(message);
@@ -145,10 +144,13 @@ public class CommandParser {
 				SendMessage sendMessageRequest = new SendMessage();
 				sendMessageRequest.setChatId(message.getChatId());
 				sendMessageRequest.setText("Please do a yelp search");
+				SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 				break;
 			case 1:
 				if (YelpCache.getInstance().getYelpList().size() > 3) {
 					YelpCache.getInstance().setYelpPageState(2);
+					yelpService.send();
+
 					break;
 				} else {
 					return;
@@ -156,6 +158,8 @@ public class CommandParser {
 			case 2:
 				if (YelpCache.getInstance().getYelpList().size() > 6) {
 					YelpCache.getInstance().setYelpPageState(3);
+					yelpService.send();
+
 					break;
 				} else {
 					return;
@@ -163,11 +167,7 @@ public class CommandParser {
 			case 3:
 				return;
 			}
-			try {
-				yelpService.send();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+
 		}
 
 		else if (command.startsWith(Commands.YELPCOMMAND)

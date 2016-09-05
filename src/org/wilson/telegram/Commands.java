@@ -9,11 +9,10 @@ public class Commands {
     public static final String commandInitChar = "/";
     public static final String DISPLAYONCOMMAND = commandInitChar + "yelpdisplayon";
     public static final String DISPLAYOFFCOMMAND = commandInitChar + "yelpdisplayoff";
-    public static final String MENUCOMMAND = commandInitChar + "menu";
+    public static final String HELPCOMMAND = commandInitChar + "help";
     public static final String RIKICOMMAND = commandInitChar + "riki";
     public static final String JDEACOMMAND = commandInitChar + "jdea";
     public static final String DAVIDCOMMAND = commandInitChar + "david";
-    public static final String CHRISCOMMAND = commandInitChar + "chris";
     public static final String CALVINCOMMAND = commandInitChar + "calvin";
     public static final String WILSONCOMMAND = commandInitChar + "wilson";
 

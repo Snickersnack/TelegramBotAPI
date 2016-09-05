@@ -14,7 +14,7 @@ public class BotUtilities {
 		this.message = message;
 	}
 	
-	public void sendMenu(){
+	public void sendHelp(){
 		try{
 	SendMessage sendMessageRequest = new SendMessage();
     sendMessageRequest.setChatId(message.getChatId());
@@ -25,10 +25,14 @@ public class BotUtilities {
     		"/yelpdisplayon - Enables yelp link display" + System.getProperty("line.separator") + 
     		"/yelpdisplayoff - Disables yelp link display" + System.getProperty("line.separator") + 
     		"/steam - Checks for any stored users currently in game on Steam" + System.getProperty("line.separator") + 
-    		"/user - Replace 'user' with a stored user (/riki, /jdea, etc) to get the stats of their last dota game " + System.getProperty("line.separator") + 
+    		"/user - Replace *user* with a stored *user* (/riki, /jdea, etc) to get the stats of their last dota game " + System.getProperty("line.separator") + 
     		"/users - List of stored users" + System.getProperty("line.separator") +
-    		"*Note that rapid requests against the Steam API will cause it to fail" + System.getProperty("line.separator"));
-    SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+    		" " + System.getProperty("line.separator") +
+
+    		"*Note:* Rapid requests against the Steam API will cause it to fail" + System.getProperty("line.separator"));
+    		
+    		SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+    		System.out.println(sendMessageRequest.getText());
 		}
 		catch(Exception e){
 			e.printStackTrace();
@@ -41,7 +45,7 @@ public class BotUtilities {
 		    sendMessageRequest.setChatId(message.getChatId());
 		    sendMessageRequest.enableMarkdown(true);
 		    sendMessageRequest.setText(
-		    		"Current Users:" + System.getProperty("line.separator") +
+		    		"*Current Users:*" + System.getProperty("line.separator") +
 		    		"calvin" + System.getProperty("line.separator") + 
 		    		"chris" + System.getProperty("line.separator") +
 		    		"david" + System.getProperty("line.separator") + 

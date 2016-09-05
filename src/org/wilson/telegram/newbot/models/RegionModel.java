@@ -2,6 +2,11 @@ package org.wilson.telegram.newbot.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * Model for the incoming json request made by the YelpService
+ * 
+ */
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class RegionModel {

@@ -291,7 +291,7 @@ public class DotaService {
 		+ System.getProperty("line.separator")
 		+ "Duration of match: " + String.format("%02d", matchDetailResponse.getResult().getDuration() / 60) + ":" + String.format("%02d", matchDetailResponse.getResult().getDuration() % 60)
 		+ System.getProperty("line.separator")
-		+ "[Yasp Match Stats]"
+		+ "[OpenDota Match Stats]"
 		+ "(https://yasp.co/matches/" + mostRecentMatch
 		+ ")";
 		if(matchHistoryResponse == null){

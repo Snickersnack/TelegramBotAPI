@@ -2,6 +2,11 @@ package org.wilson.telegram.newbot.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Model for the incoming json request made by HeroesRequest
+ * 
+ */
+
 
 public class DotaHeroes {
 

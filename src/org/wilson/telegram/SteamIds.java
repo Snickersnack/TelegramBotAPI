@@ -3,6 +3,11 @@ package org.wilson.telegram;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Static list of SteamIds
+ * 
+ */
+
 public class SteamIds {
 
 	public static final String RIKI = "76561198000302345";

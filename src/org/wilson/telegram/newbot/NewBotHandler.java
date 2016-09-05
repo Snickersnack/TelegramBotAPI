@@ -8,8 +8,13 @@ import org.telegram.updateshandlers.UpdatesCallback;
 import org.telegram.updatesreceivers.UpdatesThread;
 import org.telegram.updatesreceivers.Webhook;
 import org.wilson.telegram.BotConfig;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**
+ * Re-implemented handler class. Deals with message updates
+ * 
+ */
+
 
 public class NewBotHandler implements UpdatesCallback{
     private static final String TOKEN = BotConfig.TOKENNEWBOT;
