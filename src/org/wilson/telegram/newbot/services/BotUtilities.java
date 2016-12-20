@@ -1,47 +1,52 @@
 package org.wilson.telegram.newbot.services;
 
-import org.telegram.BotConfig;
-import org.telegram.SenderHelper;
-import org.telegram.api.methods.SendMessage;
-import org.telegram.api.objects.Message;
+import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.objects.Message;
+import org.wilson.telegram.BotConfig;
 
 public class BotUtilities {
     private static final String TOKEN = BotConfig.TOKENNEWBOT;
     private static final String BOTNAME = BotConfig.USERNAMENEWBOT;
+    SendMessage sendMessageRequest;
 	private Message message;
 	
 	public BotUtilities(Message message){
 		this.message = message;
+		sendMessageRequest = new SendMessage();
 	}
 	
-	public void sendHelp(){
+	public SendMessage sendHelp(){
+		 
 		try{
-	SendMessage sendMessageRequest = new SendMessage();
     sendMessageRequest.setChatId(message.getChatId());
     sendMessageRequest.enableMarkdown(true);
-    sendMessageRequest.setText("/yelp - Use this format: *search term* @ *location*" + System.getProperty("line.separator") +
-    		"/next - Next page on the most recent yelp search" + System.getProperty("line.separator") + 
-    		"/prev - Previous page on the most recent yelp search" + System.getProperty("line.separator") +
-    		"/yelpdisplayon - Enables yelp link display" + System.getProperty("line.separator") + 
+    sendMessageRequest.setText(
+    		"/start - Events can only be shared by host " + System.getProperty("line.separator") +
+    		"/yelp - Search term @ location. Search term and location must be filled" + System.getProperty("line.separator") +
+    		"/yelpnext - Next page on the most recent yelp search" + System.getProperty("line.separator") + 
+    		"/yelpprev - Previous page on the most recent yelp search" + System.getProperty("line.separator") +
+    		"/yelpdisplayon - Allows link and images to be displayed for first result" + System.getProperty("line.separator") + 
     		"/yelpdisplayoff - Disables yelp link display" + System.getProperty("line.separator") + 
-    		"/steam - Checks for any stored users currently in game on Steam" + System.getProperty("line.separator") + 
-    		"/user - Replace *user* with a stored *user* (/riki, /jdea, etc) to get the stats of their last dota game " + System.getProperty("line.separator") + 
+    		"/steam - Checks if /users are currently in game in Steam " + System.getProperty("line.separator") + 
+    		"/user - Replace *user* with a stored /user (/riki, /jdea ,etc) to get the stats of their last dota game " + System.getProperty("line.separator") + 
     		"/users - List of stored users" + System.getProperty("line.separator") +
     		" " + System.getProperty("line.separator") +
+    		"*Notes:* Using @BOYZbot will allow you to create events from anywhere" + System.getProperty("line.separator")
 
-    		"*Note:* Rapid requests against the Steam API will cause it to fail" + System.getProperty("line.separator"));
-    		
-    		SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+    		);
+
     		System.out.println(sendMessageRequest.getText());
 		}
 		catch(Exception e){
 			e.printStackTrace();
 		}
+		return sendMessageRequest;
+
 	}
 	
-	public void sendUsers(){
+	public SendMessage sendUsers(){
+
 		try{
-			SendMessage sendMessageRequest = new SendMessage();
 		    sendMessageRequest.setChatId(message.getChatId());
 		    sendMessageRequest.enableMarkdown(true);
 		    sendMessageRequest.setText(
@@ -54,11 +59,12 @@ public class BotUtilities {
 		    		"ray" + System.getProperty("line.separator") + 
 		    		"riki" + System.getProperty("line.separator") +
 		    		"wilson" + System.getProperty("line.separator"));
-		    SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 				}
 				catch(Exception e){
 					e.printStackTrace();
 				}
+	    return sendMessageRequest;
+
 	}
 	
 	

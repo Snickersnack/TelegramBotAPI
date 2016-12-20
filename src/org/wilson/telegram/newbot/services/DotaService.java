@@ -11,10 +11,9 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.telegram.BotConfig;
-import org.telegram.SenderHelper;
-import org.telegram.api.methods.SendMessage;
-import org.telegram.api.objects.Message;
+import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.objects.Message;
+import org.wilson.telegram.BotConfig;
 import org.wilson.telegram.newbot.models.DotaHeroes;
 import org.wilson.telegram.newbot.models.DotaHeroesDetail;
 
@@ -87,6 +86,10 @@ public class DotaService {
 		this.message = message;
 	}
 	
+	public DotaService(){
+		
+	}
+	
 	public void setMessage(Message message){
 		this.message = message;	
 	}
@@ -129,7 +132,8 @@ public class DotaService {
 
 	}
 
-	public void send() {
+	public SendMessage send() {
+		SendMessage sendMessageRequest = new SendMessage();
 		try{
 		// get latest matches
 		DotaGetMatchHistoryRequest request = new DotaGetMatchHistoryRequest();
@@ -265,9 +269,7 @@ public class DotaService {
 			
 
 			
-		sendOutput += playerPersonaName
-				+ "'s latest match: " + mostRecentMatch
-				+ System.getProperty("line.separator") 
+		sendOutput += "<strong>" + playerPersonaName + " (" + mostRecentMatch + ")</strong>" + System.getProperty("line.separator") 
 				+ "Hero: " + heroName 
 				+ System.getProperty("line.separator")
 				+ "KDA: " + players.get(matchDetailHero).getKills()
@@ -291,30 +293,26 @@ public class DotaService {
 		+ System.getProperty("line.separator")
 		+ "Duration of match: " + String.format("%02d", matchDetailResponse.getResult().getDuration() / 60) + ":" + String.format("%02d", matchDetailResponse.getResult().getDuration() % 60)
 		+ System.getProperty("line.separator")
-		+ "[OpenDota Match Stats]"
-		+ "(https://yasp.co/matches/" + mostRecentMatch
-		+ ")";
+		+ "<a href = " + "\"" + "https://yasp.co/matches/" + mostRecentMatch + "\">" + "OpenDota Match Stats</a>";
 		if(matchHistoryResponse == null){
 			sendOutput = "Unable to reach steamAPI";
 		}
 		System.out.println(sendOutput);
-		SendMessage sendMessageRequest = new SendMessage();
-		sendMessageRequest.setDisableWebPagePreview(true);
+		sendMessageRequest.disableWebPagePreview();
 		sendMessageRequest.setChatId(message.getChatId());
-		sendMessageRequest.enableMarkdown(true);
+		sendMessageRequest.setParseMode(BotConfig.SENDMESSAGEMARKDOWN);
 		sendMessageRequest.setText(sendOutput);
-		SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
 		}
 		catch(Exception e){
 			sendOutput = "Unable to reach Steam API";
 			System.out.println(sendOutput);
-			SendMessage sendMessageRequest = new SendMessage();
-			sendMessageRequest.setDisableWebPagePreview(true);
+			sendMessageRequest.disableWebPagePreview();
 			sendMessageRequest.setChatId(message.getChatId());
-			sendMessageRequest.enableMarkdown(true);
 			sendMessageRequest.setText(sendOutput);
-			SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+			sendMessageRequest.setParseMode(BotConfig.SENDMESSAGEMARKDOWN);
+
 			e.printStackTrace();
 		}
+		return sendMessageRequest;
 	}
 }

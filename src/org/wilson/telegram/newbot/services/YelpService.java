@@ -4,11 +4,13 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.telegram.BotConfig;
-import org.telegram.SenderHelper;
-import org.telegram.api.methods.SendMessage;
-import org.telegram.api.objects.Message;
-import org.wilson.telegram.newbot.YelpCache;
+import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.updatingmessages.EditMessageText;
+import org.telegram.telegrambots.api.objects.Message;
+import org.telegram.telegrambots.bots.DefaultAbsSender;
+import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.wilson.telegram.BotConfig;
+import org.wilson.telegram.newbot.Cache;
 import org.wilson.telegram.newbot.auth.YelpAuth;
 import org.wilson.telegram.newbot.models.NewBotYelpModels;
 
@@ -38,12 +40,11 @@ public class YelpService {
 		this.message = message;
 	}
 
-	public void request(){
-	  YelpCache.getInstance().clearYelpCache();
-	  YelpCache.getInstance().setYelpPageState(0);
+	public void request(String query){
+	  Cache.getInstance().clearYelpCache();
+	  Cache.getInstance().setYelpPageState(0);
 	  System.out.println("beginning of request");
-	  String commandSplit = message.getText();
-	  List<String> items = Arrays.asList(commandSplit.substring(6).split("@"));
+	  List<String> items = Arrays.asList(query.split("@"));
 	  for (int i = 0; i < items.size(); i++) {
 		  
 		  System.out.println(items.get(i));
@@ -71,58 +72,54 @@ public class YelpService {
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
-	YelpCache.getInstance().setYelpList(model.getBusinesses());
-	YelpCache.getInstance().setYelpPageState(1);
+	Cache.getInstance().setYelpList(model.getBusinesses());
+	Cache.getInstance().setYelpPageState(1);
 
 }
 
-	public void send() {
+	public SendMessage send() throws TelegramApiException {
 		// Create Send message request to Telegram
 		SendMessage sendMessageRequest = new SendMessage();
 		sendMessageRequest.setChatId(message.getChatId());
-		sendMessageRequest.enableMarkdown(true);
+		sendMessageRequest.setParseMode("Markdown");
 			int count = 0;
 			
-			if (YelpCache.getInstance().getYelpPageState() != 0) {
-				count = (3 * YelpCache.getInstance().getYelpPageState()) - 3;
+			if (Cache.getInstance().getYelpPageState() != 0) {
+				count = (3 * Cache.getInstance().getYelpPageState()) - 3;
 			}
-			for (int i = 0; i < YelpCache.getInstance().getCurrentYelpList()
+			StringBuilder sb = new StringBuilder();
+			sb.append("/yelpprev    |    /yelpnext" + System.getProperty("line.separator") + System.getProperty("line.separator"));
+
+			for (int i = 0; i < Cache.getInstance().getCurrentYelpList()
 					.size(); i++) {
 				count++;
 
-
-				sendMessageRequest.setText(count
-						+ ") "
-						+ "[" +YelpCache.getInstance().getCurrentYelpList().get(i)
-								.getName() + "]" + "(" + YelpCache.getInstance().getCurrentYelpList().get(i)
+				sb.append(
+//						count+ ") "
+						 "[" +Cache.getInstance().getCurrentYelpList().get(i)
+								.getName() + "]" + "(" + Cache.getInstance().getCurrentYelpList().get(i)
 								.getUrl() + ")"
-						+ System.getProperty("line.separator")
-						+ "Rating: "
-						+ YelpCache.getInstance().getCurrentYelpList().get(i)
+						+ " - " + Cache.getInstance().getCurrentYelpList().get(i).getLocation().getCity()
+						+ " (" + Cache.getInstance().getCurrentYelpList().get(i)
 								.getRating()
+						+ "/" + Cache.getInstance().getCurrentYelpList().get(i).getReviewCount() + ")"
 						+ System.getProperty("line.separator")
-						+ "Reviews: " 
-						+YelpCache.getInstance().getCurrentYelpList().get(i).getReviewCount()
-						+ System.getProperty("line.separator") 
 
-						+ System.getProperty("line.separator") 
 
 
 				);
 
-				System.out.println("Rating: "
-						+ YelpCache.getInstance().getCurrentYelpList().get(i)
-								.getRating()
-						+ System.getProperty("line.separator"));
 				
-				sendMessageRequest.setDisableWebPagePreview(YelpCache.getInstance().getYelpDisplay());
-				SenderHelper.SendApiMethod(sendMessageRequest, TOKEN);
+				
+				if(Cache.getInstance().getYelpDisplay()){
+					sendMessageRequest.disableWebPagePreview();
+				}else{
+					sendMessageRequest.enableWebPagePreview();
+				}
+				
 			}
-			SendMessage sendMessageRequest1 = new SendMessage();
-			sendMessageRequest1.setChatId(message.getChatId());
-			sendMessageRequest1.setText("/next for more /prev for last page");
-			SenderHelper.SendApiMethod(sendMessageRequest1, TOKEN);
-
+			sendMessageRequest.setText(sb.toString());
+			return sendMessageRequest;
 		}
 //	}
 }

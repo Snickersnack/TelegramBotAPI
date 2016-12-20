@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 
 
-@JsonIgnoreProperties(ignoreUnknown = true, value = {"categories", "location"} )
+@JsonIgnoreProperties(ignoreUnknown = true, value = {"categories"} )
 
 
 public class YelpBusinesses {

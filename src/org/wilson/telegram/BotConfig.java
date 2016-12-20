@@ -9,5 +9,6 @@ public class BotConfig {
     public static final String CONSUMERSECRET = "Gt8Yb4yXUIDo5nZh15ZIzOgmKBQ";
     public static final String YELPTOKEN = "MLHPqPG7-pWg4VjmXTK-fDnAcb9lP5rt";
     public static final String YELPTOKENSECRET = "yM4OG1_fewCqwmLyAszme59asx4";
+    public static final String SENDMESSAGEMARKDOWN = "HTML";
     
 }
