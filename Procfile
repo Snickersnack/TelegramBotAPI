@@ -1,1 +1,1 @@
-java -jar target/TelegramBotAPI.jar
+worker: java -jar target/TelegramBotAPI.jar
