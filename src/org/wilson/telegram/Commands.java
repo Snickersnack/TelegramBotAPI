@@ -23,6 +23,9 @@ public class Commands {
     public static final String CALVINCOMMAND = commandInitChar + "calvin";
     public static final String WILSONCOMMAND = commandInitChar + "wilson";
 
+    public static final String ALANCOMMAND = commandInitChar + "alan";
+    public static final String ALVINCOMMAND = commandInitChar + "alvin";
+    public static final String CHRISCOMMAND = commandInitChar + "chris";
 
     public static final String ELTONCOMMAND = commandInitChar + "elton";
     public static final String RAYCOMMAND = commandInitChar + "ray";

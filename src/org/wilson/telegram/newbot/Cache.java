@@ -1,13 +1,10 @@
 package org.wilson.telegram.newbot;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-import org.telegram.telegrambots.api.objects.replykeyboard.buttons.InlineKeyboardButton;
-import org.wilson.telegram.newbot.models.EventModel;
+import org.wilson.telegram.SteamIds;
 import org.wilson.telegram.newbot.models.YelpBusinesses;
 
 /**
@@ -22,24 +19,24 @@ public class Cache {
 	private List<YelpBusinesses> currentYelpList;
 	private int yelpPageState = 0;
 	private boolean disableYelpDisplay = false;
-	private HashMap<Integer, HashSet<EventModel>> eventMap;
-	private HashMap<Integer, EventModel> inProgressEventCreations;
 	private HashSet<String> dotaPlayers;
-	private HashMap<String, HashSet<EventModel>> channelEventMap;
+
 
 	
 
 
 	private Cache() {
-		setEventMap(new HashMap<Integer, HashSet<EventModel>>());
-		setInProgressEventCreations(new HashMap<Integer, EventModel>());
 		dotaPlayers = new HashSet<String>();
-		dotaPlayers.add("david");
-		dotaPlayers.add("jdea");
-		dotaPlayers.add("riki");
-		dotaPlayers.add("calvin");
-		dotaPlayers.add("ray");
-		dotaPlayers.add("wilson");
+		for(String item : SteamIds.NAMELIST){
+			dotaPlayers.add(item.toLowerCase());
+			System.out.println(item.toLowerCase());
+		}
+//		dotaPlayers.add("david");
+//		dotaPlayers.add("jdea");
+//		dotaPlayers.add("riki");
+//		dotaPlayers.add("calvin");
+//		dotaPlayers.add("ray");
+//		dotaPlayers.add("wilson");
 
 	}
 
@@ -128,21 +125,7 @@ public class Cache {
 	}
 
 
-	public HashMap<Integer, HashSet<EventModel>> getEventMap() {
-		return eventMap;
-	}
 
-	public void setEventMap(HashMap<Integer, HashSet<EventModel>> eventMap) {
-		this.eventMap = eventMap;
-	}
-
-	public HashMap<Integer, EventModel> getInProgressEventCreations() {
-		return inProgressEventCreations;
-	}
-
-	public void setInProgressEventCreations(HashMap<Integer, EventModel> inProgressEventCreations) {
-		this.inProgressEventCreations = inProgressEventCreations;
-	}
 	public HashSet<String> getDotaPlayers() {
 		return dotaPlayers;
 	}
@@ -151,11 +134,4 @@ public class Cache {
 		this.dotaPlayers = dotaPlayers;
 	}
 
-	public HashMap<String, HashSet<EventModel>> getChannelEventMap() {
-		return channelEventMap;
-	}
-
-	public void setChannelEventMap(HashMap<String, HashSet<EventModel>> channelEventMap) {
-		this.channelEventMap = channelEventMap;
-	}
 }

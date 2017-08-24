@@ -95,6 +95,7 @@ public class DotaService {
 	}
 
 	public void setId(String id) {
+		System.out.println("id = " + id);
 		this.dota32Id = (Long.parseLong(id)
 				- (Long.parseLong("76561197960265728")) + "");
 		this.dotaId = id;
@@ -138,6 +139,7 @@ public class DotaService {
 		// get latest matches
 		DotaGetMatchHistoryRequest request = new DotaGetMatchHistoryRequest();
 		request.setAccountId(dota32Id);
+		System.out.println(dota32Id);
 		matchHistoryResponse = (MatchHistoryResponse) api
 				.execute(request);
 		mostRecentMatch = matchHistoryResponse.getResult().getMatches().get(0)
@@ -280,13 +282,13 @@ public class DotaService {
 				+ System.getProperty("line.separator")
 				+ playerPersonaName + " GPM: " + players.get(matchDetailHero).getGoldPerMin() + " (" + this.highestGpm + " - " + this.lowestGpm + ")"
 				+ System.getProperty("line.separator")
-				+ "Highest Hero Dmg: " + this.highestDmgPlayer + " |" + this.highestDmgHero + "|" + this.highestHeroDamage
+				+ "Highest Hero Dmg: " + this.highestDmgHero + "|" + this.highestHeroDamage
 				+ System.getProperty("line.separator") 
-				+ "Lowest Hero Dmg: " + this.lowestDmgPlayer + " |" + this.lowestDmgHero  + "|" + this.lowestHeroDamage
+				+ "Lowest Hero Dmg: " + this.lowestDmgHero  + "|" + this.lowestHeroDamage
 				+ System.getProperty("line.separator") 
-				+ "Highest GPM: " + this.highestGpmPlayer + " |" + this.highestGpmHero + "|" + this.highestGpm
+				+ "Highest GPM: "  + this.highestGpmHero + "|" + this.highestGpm
 				+ System.getProperty("line.separator")
-				+ "Lowest GPM: " + this.lowestGpmPlayer + " |" + this.lowestGpmHero+ "|" + this.lowestGpm
+				+ "Lowest GPM: " + this.lowestGpmHero+ "|" + this.lowestGpm
 				+ System.getProperty("line.separator")
 
 		+ "Win/Lose: " + matchResult 

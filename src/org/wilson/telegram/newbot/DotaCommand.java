@@ -29,6 +29,10 @@ public class DotaCommand {
 			}
 		}
 		
+		else if (command.startsWith(Commands.ALANCOMMAND)) {
+			dota.setId(SteamIds.ALAN);
+
+		}
 		else if (command.startsWith(Commands.JDEACOMMAND)) {
 			dota.setId(SteamIds.JDEA);
 
@@ -53,6 +57,14 @@ public class DotaCommand {
 		}
 		else if (command.startsWith(Commands.WILSONCOMMAND)) {
 			dota.setId(SteamIds.WILSON);
+
+		}
+		else if (command.startsWith(Commands.CHRISCOMMAND)) {
+			dota.setId(SteamIds.CHRIS);
+
+		}
+		else if (command.startsWith(Commands.ALVINCOMMAND)) {
+			dota.setId(SteamIds.ALVIN);
 
 		}
 		sendMessageRequest = dota.send();

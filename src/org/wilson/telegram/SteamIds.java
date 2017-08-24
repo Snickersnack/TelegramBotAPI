@@ -23,10 +23,14 @@ public class SteamIds {
 	public static final String ALAN = "76561197968492026";
 	public static final String LOROCK = "76561198031531434";
 	public static final String HANSON = "76561197998833583";
+	public static final String ALVIN = "76561198009924427";
+
 
 
 	public static final List<String> LIST = Arrays.asList(new String[] {RIKI, JDEA, 
-			WILSON,BRO, DAVID, CALVIN,ELTON,JUSTIN,CHRIS,ALAN,JEFF,LOROCK,HANSON});;
+			WILSON,BRO, DAVID, CALVIN,ELTON,JUSTIN,CHRIS,ALAN,JEFF,LOROCK,HANSON, ALVIN});
+	public static final String[] NAMELIST = new String[] {"riki", "jdea", 
+			"wilson","raymond", "david", "calvin","elton","justin","chris","alan","jeff","lorock","hanson", "alvin"};
 	public SteamIds(){}
 	
 }
