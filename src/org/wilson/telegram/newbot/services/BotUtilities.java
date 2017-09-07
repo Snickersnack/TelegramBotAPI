@@ -3,6 +3,7 @@ package org.wilson.telegram.newbot.services;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Message;
 import org.wilson.telegram.BotConfig;
+import org.wilson.telegram.newbot.Cache;
 
 public class BotUtilities {
     private static final String TOKEN = BotConfig.TOKENNEWBOT;
@@ -49,16 +50,13 @@ public class BotUtilities {
 		try{
 		    sendMessageRequest.setChatId(message.getChatId());
 		    sendMessageRequest.enableMarkdown(true);
-		    sendMessageRequest.setText(
-		    		"*Current Users:*" + System.getProperty("line.separator") +
-		    		"calvin" + System.getProperty("line.separator") + 
-		    		"chris" + System.getProperty("line.separator") +
-		    		"david" + System.getProperty("line.separator") + 
-		    		"elton" + System.getProperty("line.separator") + 
-		    		"jdea" + System.getProperty("line.separator") + 
-		    		"ray" + System.getProperty("line.separator") + 
-		    		"riki" + System.getProperty("line.separator") +
-		    		"wilson" + System.getProperty("line.separator"));
+		    StringBuilder sb = new StringBuilder();
+		    sb.append("*Current tracked players:*" + System.getProperty("line.separator"));
+		    for(String item : Cache.getInstance().getPlayers()){
+	    		sb.append(item + System.getProperty("line.separator"));
+
+		    }
+		    sendMessageRequest.setText(sb.toString());
 				}
 				catch(Exception e){
 					e.printStackTrace();

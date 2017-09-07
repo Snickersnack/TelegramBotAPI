@@ -4,7 +4,10 @@ package org.wilson.telegram.newbot;
 
 import java.util.HashSet;
 
+import org.telegram.telegrambots.api.methods.PartialBotApiMethod;
+import org.telegram.telegrambots.api.methods.send.SendDocument;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.wilson.telegram.BotConfig;
@@ -36,11 +39,12 @@ public class CommandParser {
 
 	// Push commands to service classes
 
-	public SendMessage parse() throws TelegramApiException {
+	public PartialBotApiMethod<?> parse() throws TelegramApiException {
+
+      	
 		command = message.getText().toLowerCase();
 //		String user = message.getFrom().getUserName();
 		Integer userId = message.getFrom().getId();
-		
 
 
 		if (command.startsWith(Commands.HELPCOMMAND)
@@ -55,6 +59,39 @@ public class CommandParser {
 			sendMessageRequest = utilities.sendUsers();
 
 		}
+		else if(command.startsWith(Commands.CRYCOMMAND)){
+			SendDocument send = new SendDocument();
+			send.setChatId(message.getChatId());
+			send.setDocument("CgADAQADBQADq3WBRXyA4tZmeuwBAg");
+			return send;			
+		}
+		else if(command.startsWith(Commands.MADCOMMAND)){
+			SendDocument send = new SendDocument();
+			send.setChatId(message.getChatId());
+			send.setDocument("CgADAQADCAADq3WBRRLHsY2Gd0iuAg");
+			return send;
+		}		
+		
+		else if(command.startsWith(Commands.KISSCOMMAND)){
+			SendDocument send = new SendDocument();
+			send.setChatId(message.getChatId());
+			send.setDocument("CgADAQADDAADq3WBRegpKkbhzGD3Ag");
+			return send;
+		}
+		
+		else if(command.startsWith(Commands.APPROVECOMMAND)){
+			SendDocument send = new SendDocument();
+			send.setChatId(message.getChatId());
+			send.setDocument("CgADAQADBwADq3WBRXbPAAGBJ59w7QI");
+			return send;			
+		}
+		else if(command.startsWith(Commands.LAUGHCOMMAND)){
+			SendDocument send = new SendDocument();
+			send.setChatId(message.getChatId());
+			send.setDocument("CgADAQADCAADqfN4RQXnIgThC1aWAg");
+			return send;
+		
+	}
 		
 
 		else if(command.startsWith(Commands.YELPCOMMAND)){
@@ -66,23 +103,21 @@ public class CommandParser {
 			sendMessageRequest = steamService.send();
 
 		}
-//		else if(command.equals(Commands.TESTCOMMAND)){
-//			Message message = new Message();
-//		}
+
 			
 
 		else if(command.startsWith(Commands.commandInitChar)){
-			HashSet<String> dotaPlayers = Cache.getInstance().getDotaPlayers();
+			HashSet<String> dotaPlayers = Cache.getInstance().getPlayers();
 			command.replaceAll(" ", "");
 			if(command.length() > 10){
 				if(dotaPlayers.contains(command.substring(1,command.length()-8))){
 					DotaCommand dota = new DotaCommand(message);
-					sendMessageRequest = dota.parse(message);
+					return dota.parse(message);
 				}
 			}else{
 				if(dotaPlayers.contains(command.substring(1))){
 					DotaCommand dota = new DotaCommand(message);
-					sendMessageRequest = dota.parse(message);
+					return dota.parse(message);
 				}
 			}
 

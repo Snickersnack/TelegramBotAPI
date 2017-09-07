@@ -1,9 +1,12 @@
 package org.wilson.telegram.newbot.services;
 
+import java.util.Map.Entry;
+
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Message;
 import org.wilson.telegram.BotConfig;
 import org.wilson.telegram.SteamIds;
+import org.wilson.telegram.newbot.Cache;
 
 import com.wilson.data.client.SteamApi;
 import com.wilson.data.client.user.SteamGetPlayerSummaryRequest;
@@ -31,10 +34,10 @@ public class SteamService {
 		sendMessageRequest.setChatId(message.getChatId());
 		SteamApi api = new SteamApi("029021F53D5F974DA73A60F9300C3CF5");
 
-		for (String steamId : SteamIds.LIST) {
+		for (Entry<String, String> steamId : Cache.getInstance().getSteamIds().entrySet()) {
 			SteamPlayer playerSummary = new SteamPlayer();
 			SteamGetPlayerSummaryRequest request = new SteamGetPlayerSummaryRequest();
-			request.setSteamId(steamId);
+			request.setSteamId(steamId.getValue());
 			SteamPlayerSummary playerSummaryResponse = (SteamPlayerSummary) api
 					.execute(request);
 			try {

@@ -1,6 +1,8 @@
 package org.wilson.telegram.newbot;
 
+import org.telegram.telegrambots.api.methods.PartialBotApiMethod;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.wilson.telegram.Commands;
 import org.wilson.telegram.SteamIds;
@@ -16,57 +18,29 @@ public class DotaCommand {
 		dota.setHeroes();
 	}
 	
-	public static SendMessage parse(Message message){
-		String command = message.getText().toLowerCase();
+	public static PartialBotApiMethod<?> parse(Message message){
+		String command = message.getText().substring(1, message.getText().length()).toLowerCase();
 		
       	SendMessage sendMessageRequest = new SendMessage();
-		if (command.startsWith(Commands.RIKICOMMAND)) {
-			try{
-			dota.setId(SteamIds.RIKI);
-			}
-			catch(Exception e){
-				e.printStackTrace();
-			}
-		}
 		
-		else if (command.startsWith(Commands.ALANCOMMAND)) {
-			dota.setId(SteamIds.ALAN);
+      	
 
-		}
-		else if (command.startsWith(Commands.JDEACOMMAND)) {
-			dota.setId(SteamIds.JDEA);
 
-		}
-		else if (command.startsWith(Commands.RAYCOMMAND)) {
-			dota.setId(SteamIds.BRO);
-
-		}
-		else if (command.startsWith(Commands.ELTONCOMMAND)) {
-			dota.setId(SteamIds.ELTON);
-
-		}
-		else if (command.startsWith(Commands.DAVIDCOMMAND)) {
-			dota.setId(SteamIds.DAVID);
-		}
-
-		else if (command.startsWith(Commands.CALVINCOMMAND)) {
+		if (command.startsWith("calvin")) {
 			sendMessageRequest.setChatId(message.getChatId());
 			sendMessageRequest.setText("https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png");
 			return sendMessageRequest;
-
 		}
-		else if (command.startsWith(Commands.WILSONCOMMAND)) {
-			dota.setId(SteamIds.WILSON);
-
+		else if(command.startsWith("nicole")){
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto("AgADAwADqacxGz2uiE2koARw6cdKELH3hjEABHvI-EcZcbrTR1oBAAEC");
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
+			
 		}
-		else if (command.startsWith(Commands.CHRISCOMMAND)) {
-			dota.setId(SteamIds.CHRIS);
+		System.out.println(command);
+      	dota.setId(Cache.getInstance().getSteamIds().get(command));
 
-		}
-		else if (command.startsWith(Commands.ALVINCOMMAND)) {
-			dota.setId(SteamIds.ALVIN);
-
-		}
 		sendMessageRequest = dota.send();
 		return sendMessageRequest;
 	}

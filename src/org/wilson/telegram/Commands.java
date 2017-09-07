@@ -14,6 +14,13 @@ public class Commands {
     public static final String DELETEEVENTSCOMMAND = commandInitChar + "deleteevent";
     public static final String CLEAREVENTSCOMMAND = commandInitChar + "clearevents";
     public static final String TESTCOMMAND = commandInitChar + "test";
+    public static final String CRYCOMMAND = commandInitChar + "cry";
+    public static final String LAUGHCOMMAND = commandInitChar + "laugh";
+    public static final String MADCOMMAND = commandInitChar + "mad";
+    public static final String APPROVECOMMAND = commandInitChar + "approve";
+    public static final String KISSCOMMAND = commandInitChar + "kiss";
+
+
 
     
 

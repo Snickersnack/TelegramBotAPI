@@ -29,13 +29,13 @@
     </dependencyManagement>
 
     <dependencies>
-<!--      <dependency>
+     <dependency>
          <groupId>dota2</groupId>
          <artifactId>dota2</artifactId>
          <scope>system</scope>
          <version>1.0</version>
          <systemPath>/Users/wilsontan/Downloads/Dota/dota2.jar</systemPath>
-      </dependency> -->
+      </dependency>
       
          <dependency>
         <groupId>org.telegram</groupId>

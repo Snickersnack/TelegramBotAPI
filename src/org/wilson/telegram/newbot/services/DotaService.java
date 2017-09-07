@@ -1,7 +1,13 @@
 package org.wilson.telegram.newbot.services;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,6 +56,7 @@ public class DotaService {
 	private String steamKey = "029021F53D5F974DA73A60F9300C3CF5";
 	private List<DotaHeroesDetail> dotaHeroList = new ArrayList<DotaHeroesDetail>();
 	private String heroName;
+	private Long startTime;
 	private int matchDetailHero;
 	private int highestGpm = 0 ;
 	private int lowestGpm = 9999;
@@ -153,6 +160,16 @@ public class DotaService {
 		List<MatchDetailPlayer> players = matchDetailResponse.getResult()
 				.getPlayers();
 
+		//date
+		startTime = matchDetailResponse.getResult().getStartTime();
+		Date dateStart = new Date(startTime * 1000);
+		LocalDateTime ldt = LocalDateTime.ofInstant(dateStart.toInstant(), ZoneId.of("America/Los_Angeles"));
+		Date out = Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
+		DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
+		String playDate = df.format(out);
+
+
+		
 		// loop through all players in response object to find our player
 		for (int i = 0; i < players.size(); i++) {
 	
@@ -271,7 +288,7 @@ public class DotaService {
 			
 
 			
-		sendOutput += "<strong>" + playerPersonaName + " (" + mostRecentMatch + ")</strong>" + System.getProperty("line.separator") 
+		sendOutput += "<strong>" + playerPersonaName + " (" + playDate + ")</strong>" + System.getProperty("line.separator") 
 				+ "Hero: " + heroName 
 				+ System.getProperty("line.separator")
 				+ "KDA: " + players.get(matchDetailHero).getKills()

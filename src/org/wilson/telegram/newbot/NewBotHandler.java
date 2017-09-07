@@ -1,7 +1,10 @@
 package org.wilson.telegram.newbot;
 
 import org.telegram.telegrambots.api.methods.BotApiMethod;
+import org.telegram.telegrambots.api.methods.PartialBotApiMethod;
+import org.telegram.telegrambots.api.methods.send.SendDocument;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -35,12 +38,11 @@ public class NewBotHandler extends TelegramLongPollingBot {
 
 	public void onUpdateReceived(Update update) {
 		// TODO Auto-generated method stub
-		System.out.println("heres' the update: " + update);
+		System.out.println("UPDATE FOR DEBUGGING: " + update);
+
 		try {
-			BotApiMethod<?> msg = handleUpdate(update);
+			PartialBotApiMethod<?> msg = handleUpdate(update);
 			if (msg != null) {
-				System.out.println("UPDATE FOR DEBUGGING: " + update);
-				System.out.println("MSG FOR DEBUGGING" + msg);
 				executeMessage(msg);
 			}
 
@@ -56,11 +58,9 @@ public class NewBotHandler extends TelegramLongPollingBot {
 		return null;
 	}
 
-	public BotApiMethod<?> handleUpdate(Update update)
+	public PartialBotApiMethod<?> handleUpdate(Update update)
 			throws TelegramApiException {
-		
-		SendMessage sendMessageRequest = new SendMessage();
-		
+		PartialBotApiMethod<?> msg = null;		
 		if(update.hasChosenInlineQuery()){		
 		}
 		else if (update.hasInlineQuery()) {
@@ -73,15 +73,13 @@ public class NewBotHandler extends TelegramLongPollingBot {
 
 			CommandParser commandParser = new CommandParser(message);
 			try {
-				sendMessageRequest = commandParser.parse();
+				msg = commandParser.parse();
 
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-
-			return sendMessageRequest;		
 			}
-		return null;
+		return msg;
 
 	}
 	
@@ -90,13 +88,12 @@ public class NewBotHandler extends TelegramLongPollingBot {
 	
 
 
-	private void executeMessage(BotApiMethod<?> msg)
+	private void executeMessage(PartialBotApiMethod<?> msg)
 			throws TelegramApiException {
 
 		if(msg == null){
 			return;
 		}
-		System.out.println("sending: "  + msg.toString());
 		if (msg instanceof SendMessage) {
 			SendMessage sMessage = (SendMessage) msg;
 			if(sMessage.getChatId()!=null){
@@ -105,10 +102,17 @@ public class NewBotHandler extends TelegramLongPollingBot {
 			}
 
 
-		} else {
-			sendApiMethod(msg);
+		}
+		else if(msg instanceof SendDocument){
+			SendDocument sDocument = (SendDocument)msg;
+			sendDocument(sDocument);
 
 		}
+		else if(msg instanceof SendPhoto){
+			SendPhoto sPhoto = (SendPhoto)msg;
+			sendPhoto(sPhoto);
+		}
+
 
 	}
 

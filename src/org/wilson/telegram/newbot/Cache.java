@@ -1,8 +1,10 @@
 package org.wilson.telegram.newbot;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 import org.wilson.telegram.SteamIds;
 import org.wilson.telegram.newbot.models.YelpBusinesses;
@@ -14,34 +16,28 @@ import org.wilson.telegram.newbot.models.YelpBusinesses;
 
 public class Cache {
 
-	private static Cache yelpCache = new Cache();
+	private static Cache cache = new Cache();
 	private List<YelpBusinesses> yelpList;
 	private List<YelpBusinesses> currentYelpList;
 	private int yelpPageState = 0;
 	private boolean disableYelpDisplay = false;
-	private HashSet<String> dotaPlayers;
-
+	private HashSet<String> players;
+	private HashMap<String, String> steamIds;
 
 	
 
 
 	private Cache() {
-		dotaPlayers = new HashSet<String>();
-		for(String item : SteamIds.NAMELIST){
-			dotaPlayers.add(item.toLowerCase());
-			System.out.println(item.toLowerCase());
-		}
-//		dotaPlayers.add("david");
-//		dotaPlayers.add("jdea");
-//		dotaPlayers.add("riki");
-//		dotaPlayers.add("calvin");
-//		dotaPlayers.add("ray");
-//		dotaPlayers.add("wilson");
+		this.yelpList = new ArrayList<YelpBusinesses>();
+		this.currentYelpList = new ArrayList<YelpBusinesses>();
+		this.players = new HashSet<String>();
+		this.steamIds = new HashMap<String, String>();
+
 
 	}
 
 	public static Cache getInstance() {
-		return yelpCache;
+		return cache;
 	}
 
 	
@@ -50,9 +46,26 @@ public class Cache {
 	}
 
 	public void init() {
-		this.yelpList = new ArrayList<YelpBusinesses>();
-		this.currentYelpList = new ArrayList<YelpBusinesses>();
+		steamIds.put("riki", "76561198000302345");
+		steamIds.put("jdea", "76561197999636832");
+		steamIds.put("wilson", "76561198021016937");
+		steamIds.put("ray", "76561198019034863");
+		steamIds.put("dfoo", "76561197961230323");
+		steamIds.put("calvin", "76561197998512839");
+		steamIds.put("elton", "76561197993274771");
+		steamIds.put("justin", "76561197991697481");
+		steamIds.put("chris", "76561198025272852");
+		steamIds.put("jeff", "76561198051626437");
+		steamIds.put("alan", "76561197968492026");
+		steamIds.put("lorock", "76561198031531434");
+		steamIds.put("hanson", "76561197998833583");
+		steamIds.put("alvin", "76561198009924427");
+		steamIds.put("nicole", "76561198250542926");
+		steamIds.put("shirley", "76561197998883829");
 
+		for(Map.Entry<String, String> item : steamIds.entrySet()){
+			players.add(item.getKey().toLowerCase());
+		}
 	}
 
 	public boolean getYelpDisplay(){
@@ -126,12 +139,20 @@ public class Cache {
 
 
 
-	public HashSet<String> getDotaPlayers() {
-		return dotaPlayers;
+	public HashSet<String> getPlayers() {
+		return players;
 	}
 
-	public void setDotaPlayers(HashSet<String> dotaPlayers) {
-		this.dotaPlayers = dotaPlayers;
+	public void setPlayers(HashSet<String> players) {
+		this.players = players;
+	}
+
+	public HashMap<String, String> getSteamIds() {
+		return steamIds;
+	}
+
+	public void setSteamIds(HashMap<String, String> steamIds) {
+		this.steamIds = steamIds;
 	}
 
 }
