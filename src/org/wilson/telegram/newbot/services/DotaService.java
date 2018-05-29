@@ -5,7 +5,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -22,6 +21,9 @@ import org.telegram.telegrambots.api.objects.Message;
 import org.wilson.telegram.BotConfig;
 import org.wilson.telegram.newbot.models.DotaHeroes;
 import org.wilson.telegram.newbot.models.DotaHeroesDetail;
+import org.wilson.telegram.newbot.models.OpenDotaMatch;
+import org.wilson.telegram.newbot.models.OpenDotaMatchHistory;
+import org.wilson.telegram.newbot.models.OpenDotaPlayer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wilson.data.client.SteamApi;
@@ -82,6 +84,9 @@ public class DotaService {
 	private List<SteamPlayer> steamPlayerList;
 	private Map<String, String> queryMap;
 	MatchHistoryResponse matchHistoryResponse;
+	OpenDotaMatch openDotaMatch;
+	OpenDotaMatchHistory openDotaMatchHistory;
+	OpenDotaPlayer openDotaPlayers;
 
 	
 	
@@ -139,18 +144,84 @@ public class DotaService {
 		System.out.println(heroResponse.getResult().getStatus());
 
 	}
+	
+	public void getOpenDotaMatchHistory(String dota32Id){
+		client = HttpClients.createDefault();
+		HttpGet openDotaHistoryRequest = new HttpGet(
+				"https://api.opendota.com/api/players/" + dota32Id + "/recentmatches");
+		
+		try {
+			entity = client.execute(openDotaHistoryRequest).getEntity();
+			if (entity == null) {
+				System.out.println("Entity null");
+			} else {
+				response = EntityUtils.toString(entity);
+				ObjectMapper mapper = new ObjectMapper();
+				openDotaMatchHistory = mapper.readValue(response, OpenDotaMatchHistory.class);
+
+			}
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				EntityUtils.consume(entity);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			openDotaHistoryRequest.releaseConnection();
+		}
+	}
+	
+	public void getOpenDotaMatch(Long matchId){
+		client = HttpClients.createDefault();
+		HttpGet openDotaMatchRequest = new HttpGet(
+				"https://api.opendota.com/api/matches/" + matchId);
+		try {
+			entity = client.execute(openDotaMatchRequest).getEntity();
+			if (entity == null) {
+				System.out.println("Entity null");
+			} else {
+				response = EntityUtils.toString(entity);
+				ObjectMapper mapper = new ObjectMapper();
+				openDotaMatch = mapper.readValue(response, OpenDotaMatch.class);
+
+			}
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				EntityUtils.consume(entity);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			openDotaMatchRequest.releaseConnection();
+		}
+	}
 
 	public SendMessage send() {
 		SendMessage sendMessageRequest = new SendMessage();
 		try{
+		
+		getOpenDotaMatchHistory(dota32Id);
+		getOpenDotaMatch(openDotaMatchHistory.getMatch_id());
 		// get latest matches
 		DotaGetMatchHistoryRequest request = new DotaGetMatchHistoryRequest();
 		request.setAccountId(dota32Id);
 		System.out.println(dota32Id);
+		
+		
 		matchHistoryResponse = (MatchHistoryResponse) api
 				.execute(request);
+
 		mostRecentMatch = matchHistoryResponse.getResult().getMatches().get(0)
 				.getMatchId();
+		
 		DotaGetMatchDetailsRequest matchRequest = new DotaGetMatchDetailsRequest();
 		matchRequest.setMatchId(mostRecentMatch + "");
 
@@ -167,7 +238,7 @@ public class DotaService {
 		Date out = Date.from(ldt.atZone(ZoneId.systemDefault()).toInstant());
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
 		String playDate = df.format(out);
-
+		
 
 		
 		// loop through all players in response object to find our player

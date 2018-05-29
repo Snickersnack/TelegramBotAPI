@@ -57,7 +57,7 @@ public class Cache {
 		steamIds.put("chris", "76561198025272852");
 		steamIds.put("jeff", "76561198051626437");
 		steamIds.put("alan", "76561197968492026");
-		steamIds.put("lorock", "76561198031531434");
+		steamIds.put("lorock", "76561198428677546");
 		steamIds.put("hanson", "76561197998833583");
 		steamIds.put("alvin", "76561198009924427");
 		steamIds.put("nicole", "76561198250542926");

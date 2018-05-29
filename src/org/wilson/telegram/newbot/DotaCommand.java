@@ -1,20 +1,20 @@
 package org.wilson.telegram.newbot;
 
+import java.util.Random;
+
 import org.telegram.telegrambots.api.methods.PartialBotApiMethod;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
-import org.wilson.telegram.Commands;
-import org.wilson.telegram.SteamIds;
-import org.wilson.telegram.newbot.services.DotaService;
+import org.wilson.telegram.newbot.services.OpenDotaService;
 
 public class DotaCommand {
 
-	private static DotaService dota;
+	private static OpenDotaService dota;
 
 	
 	public DotaCommand(Message message){
-		dota = new DotaService(message);
+		dota = new OpenDotaService(message);
 		dota.setHeroes();
 	}
 	
@@ -27,9 +27,16 @@ public class DotaCommand {
 
 
 		if (command.startsWith("calvin")) {
-			sendMessageRequest.setChatId(message.getChatId());
-			sendMessageRequest.setText("https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png");
-			return sendMessageRequest;
+
+			String[] arr = {"AgADAQADy6cxG_JViEVEtzvjow1MqCtd9y8ABFD7nFgNoA4l1tQBAAEC", "AgADAQADzKcxG_JViEXgoVlKGLqVHGkd9y8ABNSENcAuNEFZAkAAAgI", "AgADAQADzacxG_JViEWP_ZDdNpoFheaN3i8ABHzcCJBpClcUsYEBAAEC",
+					"AgADAQADzqcxG_JViEXihtjJ2mIZ3dgS9y8ABIApyAgYGinSL6AAAgI", "AgADAQADz6cxG_JViEWoybyoFSDbvqcS9y8ABBRb2AShWsNIgZ4AAgI", "AgADAQAD0KcxG_JViEXcaLXSMK1oluEb9y8ABGcrJCdlHi3ZokMAAgI", 
+					"AgADAQAD0acxG_JViEUmx77cPzz_RWwc9y8ABBSsYlJWYBhiLUYAAgI", "AgADAQAD1KcxG_JViEVqCVSdBusMbPEY9y8ABAFdYK2zf725oEcAAgI", "AgADAQAD06cxG_JViEWHMahVGrondrcg9y8ABBKIJnTjA0wICkIAAgI"};
+			Random rand = new Random();
+			int  n = rand.nextInt(arr.length);
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto(arr[n]);
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
 		}
 		else if(command.startsWith("nicole")){
 			SendPhoto sendP = new SendPhoto();

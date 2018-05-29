@@ -19,6 +19,13 @@ public class Commands {
     public static final String MADCOMMAND = commandInitChar + "mad";
     public static final String APPROVECOMMAND = commandInitChar + "approve";
     public static final String KISSCOMMAND = commandInitChar + "kiss";
+    public static final String CUTECOMMAND = commandInitChar + "cute";
+    public static final String CUTIECOMMAND = commandInitChar + "cutie";
+    public static final String PERDERDERCOMMAND = commandInitChar + "perderder";
+    public static final String STACKCOMMAND = commandInitChar + "stack";
+
+
+
 
 
 

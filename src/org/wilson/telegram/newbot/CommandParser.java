@@ -2,7 +2,12 @@ package org.wilson.telegram.newbot;
 
 
 
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashSet;
+import java.util.Random;
 
 import org.telegram.telegrambots.api.methods.PartialBotApiMethod;
 import org.telegram.telegrambots.api.methods.send.SendDocument;
@@ -41,8 +46,12 @@ public class CommandParser {
 
 	public PartialBotApiMethod<?> parse() throws TelegramApiException {
 
-      	
-		command = message.getText().toLowerCase();
+      	try{
+    		command = message.getText().toLowerCase();
+
+      	}catch(Exception e){
+      		return null;
+      	}
 //		String user = message.getFrom().getUserName();
 		Integer userId = message.getFrom().getId();
 
@@ -53,7 +62,24 @@ public class CommandParser {
 			sendMessageRequest = utilities.sendHelp();
 		}
 		
+		else if (command.startsWith(Commands.TESTCOMMAND)) {
+			BotUtilities utilities = new BotUtilities(message);
+			SendPhoto sendPhoto = new SendPhoto();
+			InputStream in = null;
+			URL url;
+			try {
+				url = new URL("http://api.screenshotlayer.com/api/capture?access_key=46c7d8e6d4ecf2d366fe97ab59c92193&url=https://www.opendota.com/matches/3549601979/overview&viewport=1440x2800&width=2500&fullpage=1");
+				in = new BufferedInputStream(url.openStream());
+				sendPhoto.setNewPhoto("any", in);
+				sendPhoto.setChatId(message.getChatId());
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
+			return sendPhoto;
+
+		}
 		else if (command.startsWith(Commands.USERSCOMMAND)) {
 			BotUtilities utilities = new BotUtilities(message);
 			sendMessageRequest = utilities.sendUsers();
@@ -71,6 +97,23 @@ public class CommandParser {
 			send.setDocument("CgADAQADCAADq3WBRRLHsY2Gd0iuAg");
 			return send;
 		}		
+	
+		else if(command.startsWith(Commands.STACKCOMMAND)){
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto("AgADAQADq6cxG9PgUUyMYDBnLA4WYKYe9y8ABGekt0hIlJ3ZdgIBAAEC");
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
+		}		
+		
+		else if(command.startsWith(Commands.PERDERDERCOMMAND)){
+			String[] arr = {"AgADAQADwKcxGyBykUVEvmbAsPwQ2euM3i8ABLKtlN4JtIWN-YEBAAEC","AgADAQADyacxGwuxSUXw4YJjEd5_Mhog9y8ABOqrvRDxKZhDoCMAAgI", "AgADAwADq6cxGz2ukE1cBnTAQThqEjb4hjEABHbeHOWFnRYNyl0BAAEC"}; 
+			Random rand = new Random();
+			int  n = rand.nextInt(arr.length);
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto(arr[n]);
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
+		}
 		
 		else if(command.startsWith(Commands.KISSCOMMAND)){
 			SendDocument send = new SendDocument();
@@ -78,6 +121,20 @@ public class CommandParser {
 			send.setDocument("CgADAQADDAADq3WBRegpKkbhzGD3Ag");
 			return send;
 		}
+		
+		else if(command.startsWith(Commands.CUTECOMMAND)){
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto("AgADAQAD4KcxG0vriUWjUMWEpiZs7Ase9y8ABKVbGhiAj4B0OT4AAgI");
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
+		}
+		else if(command.startsWith(Commands.CUTIECOMMAND)){
+			SendPhoto sendP = new SendPhoto();
+			sendP.setPhoto("AgADAQADvKcxGwhIgUWOpcj-xBuEEYYW9y8ABE9XE8x0mvx5dT8AAgI");
+			sendP.setChatId(message.getChatId());		
+			return sendP;	
+		}
+		
 		
 		else if(command.startsWith(Commands.APPROVECOMMAND)){
 			SendDocument send = new SendDocument();
