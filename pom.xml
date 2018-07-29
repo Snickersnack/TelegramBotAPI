@@ -30,11 +30,16 @@
 
     <dependencies>
      <dependency>
+  		<groupId>com.twilio.sdk</groupId>
+  		<artifactId>twilio</artifactId>
+  		<version>7.22.0</version>
+	</dependency>
+     <dependency>
          <groupId>dota2</groupId>
          <artifactId>dota2</artifactId>
          <scope>system</scope>
          <version>1.0</version>
-         <systemPath>/Users/wilsontan/Downloads/Dota/dota2.jar</systemPath>
+         <systemPath>D:\Workspace\dota2.jar</systemPath>
       </dependency>
       
          <dependency>

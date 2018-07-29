@@ -1,5 +1,7 @@
 package org.wilson.telegram;
 
+import java.io.IOException;
+
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
@@ -19,12 +21,27 @@ public class Main {
     public static void main(String[] args) throws TelegramApiRequestException {
     	Cache.getInstance().init();	
     	ApiContextInitializer.init();
+
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
         try {
-            telegramBotsApi.registerBot(new NewBotHandler());
+        	NewBotHandler newBot = new NewBotHandler();
+            telegramBotsApi.registerBot(newBot);
+            Cache.getInstance().setBot(newBot);
         } catch (TelegramApiException e) {
-            BotLogger.error("Error: ", e);
+            BotLogger.error("Error:  ", e);
         }
+        
+        
+        
+        BabMonitoring bab = new BabMonitoring();
+        System.out.println("bab: " + bab);
+        try {
+			bab.receive();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+        
+        
         
 //        if (BuildVars.useWebHook) {
 //            webhook = new DefaultWebhook();

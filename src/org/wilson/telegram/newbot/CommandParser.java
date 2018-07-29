@@ -80,6 +80,32 @@ public class CommandParser {
 			return sendPhoto;
 
 		}
+		else if (command.startsWith(Commands.STARTCOMMAND)) {
+			if(message.getChatId() == (long) -297769804){
+				Cache.getInstance().setMonitoringOn();
+				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest = sendMessageRequest.setText("Monitoring is on");
+			}
+
+		}else if (command.startsWith(Commands.STOPCOMMAND)) {
+			sendMessageRequest.setChatId(message.getChatId());
+			if(message.getChatId() == (long) -297769804){
+				Cache.getInstance().setMonitoringOff();
+				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest = sendMessageRequest.setText("Monitoring is off");
+			}
+
+		}else if (command.startsWith(Commands.STATUSCOMMAND)) {
+			
+			boolean monitoring = Cache.getInstance().getMonitoringStatus();
+			sendMessageRequest.setChatId(message.getChatId());
+			if(monitoring){
+				sendMessageRequest = sendMessageRequest.setText("Monitoring is on");
+			}else{
+				sendMessageRequest = sendMessageRequest.setText("Monitoring is off");
+			}
+
+		}
 		else if (command.startsWith(Commands.USERSCOMMAND)) {
 			BotUtilities utilities = new BotUtilities(message);
 			sendMessageRequest = utilities.sendUsers();

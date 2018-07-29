@@ -10,7 +10,6 @@ public class Commands {
     public static final String DISPLAYONCOMMAND =  "isplayon";
     public static final String DISPLAYOFFCOMMAND = "isplayoff";
     public static final String HELPCOMMAND = commandInitChar + "help";
-    public static final String STARTCOMMAND = commandInitChar + "start";
     public static final String DELETEEVENTSCOMMAND = commandInitChar + "deleteevent";
     public static final String CLEAREVENTSCOMMAND = commandInitChar + "clearevents";
     public static final String TESTCOMMAND = commandInitChar + "test";
@@ -23,6 +22,10 @@ public class Commands {
     public static final String CUTIECOMMAND = commandInitChar + "cutie";
     public static final String PERDERDERCOMMAND = commandInitChar + "perderder";
     public static final String STACKCOMMAND = commandInitChar + "stack";
+
+    public static final String STARTCOMMAND = commandInitChar + "start";
+    public static final String STOPCOMMAND = commandInitChar + "stop";
+    public static final String STATUSCOMMAND = commandInitChar + "status";
 
 
 

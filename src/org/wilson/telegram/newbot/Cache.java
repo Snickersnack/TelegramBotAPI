@@ -23,7 +23,9 @@ public class Cache {
 	private boolean disableYelpDisplay = false;
 	private HashSet<String> players;
 	private HashMap<String, String> steamIds;
-
+	private NewBotHandler bot;
+	private boolean monitoring;
+	
 	
 
 
@@ -32,15 +34,33 @@ public class Cache {
 		this.currentYelpList = new ArrayList<YelpBusinesses>();
 		this.players = new HashSet<String>();
 		this.steamIds = new HashMap<String, String>();
-
+		this.monitoring = true;
 
 	}
 
+	public boolean getMonitoringStatus(){
+		return this.monitoring;
+	}
+	
+	public void setMonitoringOff(){
+		this.monitoring= false;
+	}
+	
+	public void setMonitoringOn(){
+		this.monitoring= true;
+	}
+	
 	public static Cache getInstance() {
 		return cache;
 	}
 
+	public void setBot(NewBotHandler bot){
+		this.bot = bot;
+	}
 	
+	public NewBotHandler getBot(){
+		return bot;
+	}
 	public void setYelpList(List<YelpBusinesses> yelpList) {
 		this.yelpList = yelpList;
 	}
