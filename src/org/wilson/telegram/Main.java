@@ -34,7 +34,7 @@ public class Main {
         
         
         BabMonitoring bab = new BabMonitoring();
-        System.out.println("bab: " + bab);
+        Cache.getInstance().setMonitor(bab);
         try {
 			bab.receive();
 		} catch (IOException e) {

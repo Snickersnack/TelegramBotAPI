@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import org.wilson.telegram.SteamIds;
+import org.wilson.telegram.BabMonitoring;
 import org.wilson.telegram.newbot.models.YelpBusinesses;
 
 /**
@@ -24,7 +24,7 @@ public class Cache {
 	private HashSet<String> players;
 	private HashMap<String, String> steamIds;
 	private NewBotHandler bot;
-	private boolean monitoring;
+	private BabMonitoring monitor;
 	
 	
 
@@ -34,21 +34,18 @@ public class Cache {
 		this.currentYelpList = new ArrayList<YelpBusinesses>();
 		this.players = new HashSet<String>();
 		this.steamIds = new HashMap<String, String>();
-		this.monitoring = true;
 
 	}
 
-	public boolean getMonitoringStatus(){
-		return this.monitoring;
+	public BabMonitoring getMonitor(){
+		return this.monitor;
 	}
 	
-	public void setMonitoringOff(){
-		this.monitoring= false;
+	public void setMonitor(BabMonitoring monitor){
+		this.monitor = monitor;
 	}
 	
-	public void setMonitoringOn(){
-		this.monitoring= true;
-	}
+
 	
 	public static Cache getInstance() {
 		return cache;

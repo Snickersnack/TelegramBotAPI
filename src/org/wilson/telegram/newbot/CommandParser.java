@@ -4,7 +4,6 @@ package org.wilson.telegram.newbot;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Random;
@@ -15,6 +14,7 @@ import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
+import org.wilson.telegram.BabMonitoring;
 import org.wilson.telegram.BotConfig;
 import org.wilson.telegram.Commands;
 import org.wilson.telegram.newbot.services.BotUtilities;
@@ -80,31 +80,20 @@ public class CommandParser {
 			return sendPhoto;
 
 		}
-		else if (command.startsWith(Commands.STARTCOMMAND)) {
+		else if (command.startsWith(Commands.ACKCOMMAND)) {
 			if(message.getChatId() == (long) -297769804){
-				Cache.getInstance().setMonitoringOn();
+				BabMonitoring monitor = Cache.getInstance().getMonitor();
 				sendMessageRequest.setChatId(message.getChatId());
-				sendMessageRequest = sendMessageRequest.setText("Monitoring is on");
-			}
-
-		}else if (command.startsWith(Commands.STOPCOMMAND)) {
-			sendMessageRequest.setChatId(message.getChatId());
-			if(message.getChatId() == (long) -297769804){
-				Cache.getInstance().setMonitoringOff();
-				sendMessageRequest.setChatId(message.getChatId());
-				sendMessageRequest = sendMessageRequest.setText("Monitoring is off");
+				String response = monitor.ackAlert(message.getFrom().getId(), message.getFrom().getUserName());
+				sendMessageRequest.setText(response);
 			}
 
 		}else if (command.startsWith(Commands.STATUSCOMMAND)) {
-			
-			boolean monitoring = Cache.getInstance().getMonitoringStatus();
-			sendMessageRequest.setChatId(message.getChatId());
-			if(monitoring){
-				sendMessageRequest = sendMessageRequest.setText("Monitoring is on");
-			}else{
-				sendMessageRequest = sendMessageRequest.setText("Monitoring is off");
+			if(message.getChatId() == (long) -297769804){
+				BabMonitoring monitor = Cache.getInstance().getMonitor();
+				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest.setText(monitor.getStatusString());
 			}
-
 		}
 		else if (command.startsWith(Commands.USERSCOMMAND)) {
 			BotUtilities utilities = new BotUtilities(message);
