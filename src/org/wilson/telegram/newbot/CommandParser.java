@@ -88,7 +88,14 @@ public class CommandParser {
 				sendMessageRequest.setText(response);
 			}
 
-		}else if (command.startsWith(Commands.STATUSCOMMAND)) {
+		}
+		else if (command.startsWith(Commands.SHEETSCOMMAND)) {
+			if(message.getChatId() == (long) -297769804){
+				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest.setText("https://docs.google.com/spreadsheets/d/1ab6mEMbtwQEZxZO0IasIBrMMe15unlHeqo7w7M32uCo/edit#gid=81553350");
+			}
+		}
+		else if (command.startsWith(Commands.STATUSCOMMAND)) {
 			if(message.getChatId() == (long) -297769804){
 				BabMonitoring monitor = Cache.getInstance().getMonitor();
 				sendMessageRequest.setChatId(message.getChatId());

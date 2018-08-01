@@ -26,6 +26,8 @@ public class Commands {
     public static final String STARTCOMMAND = commandInitChar + "start";
     public static final String ACKCOMMAND = commandInitChar + "ack";
     public static final String STATUSCOMMAND = commandInitChar + "status";
+    public static final String SHEETSCOMMAND = commandInitChar + "sheets";
+
 
 
 

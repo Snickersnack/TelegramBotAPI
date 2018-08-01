@@ -29,7 +29,7 @@ public class BabMonitoring {
 	boolean rTimeout;
 	boolean wTimeout;
 	private long expiration = 3 * 60 * 1000;
-	private String mostRecentGameId;
+	private Integer mostRecentGameId;
 	Long currentTime;
 	private boolean wAck;
 	private boolean rAck;
@@ -38,7 +38,7 @@ public class BabMonitoring {
 	public BabMonitoring() {
 		rDate = System.currentTimeMillis();
 		wDate = System.currentTimeMillis();
-		mostRecentGameId = "";
+		mostRecentGameId = 0;
 		wAck = true;
 		rAck = true;
 		newBot = Cache.getInstance().getBot();
@@ -155,10 +155,15 @@ public class BabMonitoring {
 	            if(!s.equals("GET /owmygroin HTTP/1.1") && !s.equals("GET /Snickersnack HTTP/1.1")){
 	            	String[] sSplit = s.split(" ");
 		            String[] gameSplit = sSplit[1].split("/");
-		            
-		            if(!mostRecentGameId.equals(gameSplit[1])){
-		        		mostRecentGameId=gameSplit[1];
-		        		sendMessage("High bet game detected from a script. Game id: " + gameSplit[1] + " Total bet: " + gameSplit[2]);
+	            	Integer gameId = Integer.parseInt(gameSplit[1]) + 1;
+
+		            if(mostRecentGameId != gameId){
+		        		mostRecentGameId= gameId;
+						
+
+		        		sendMessage("High bet Game ID: " + 
+		        		"<a href = " + "\"" + "https://www.bustabit.com/game/" + mostRecentGameId + "\">" + 
+		        		mostRecentGameId + "</a>" + " Total bet: " + gameSplit[2]);
 		            }
 		            break;
 	            }
@@ -207,17 +212,17 @@ public class BabMonitoring {
 		currentTime = System.currentTimeMillis();
 
 		if(wTimeout){
-			sb.append("Snickersnack script is currently down. Last seen " + ((currentTime - wDate)/1000)/60 + " minutes ago");
+			sb.append("Snickersnack script is currently down. Last seen " + ((currentTime - wDate)/1000) + " seconds ago");
 		}else{
-			sb.append("Snickersnack script is currently up. Last seen " + ((currentTime - wDate)/1000)/60 + " minutes ago");
+			sb.append("Snickersnack script is currently up. Last seen " + ((currentTime - wDate)/1000) + " seconds ago");
 		}
 		
 		sb.append(System.getProperty("line.separator"));
 
 		if(rTimeout){
-			sb.append("Owmygroin script is currently down. Last seen " + ((currentTime - rDate)/1000)/60 + " minutes ago");
+			sb.append("Owmygroin script is currently down. Last seen " + ((currentTime - rDate)/1000) + " seconds ago");
 		}else{
-			sb.append("Owmygroin script is currently up. Last seen " + ((currentTime - rDate)/1000)/60 + " minutes ago");
+			sb.append("Owmygroin script is currently up. Last seen " + ((currentTime - rDate)/1000) + " seconds ago");
 		}
 		sb.append(System.getProperty("line.separator"));
 		sb.append(System.getProperty("line.separator"));
@@ -246,6 +251,8 @@ public class BabMonitoring {
 		SendMessage sendMessageRequest = new SendMessage();
 		sendMessageRequest.setChatId((long) -297769804);
 		sendMessageRequest.setText(text);
+		sendMessageRequest.disableWebPagePreview();
+		sendMessageRequest.setParseMode(BotConfig.SENDMESSAGEMARKDOWN);
 		try {
 			newBot.sendMessage(sendMessageRequest);
 		} catch (TelegramApiException e) {
