@@ -28,22 +28,41 @@ public class BabMonitoring {
 	Long wDate;
 	boolean rTimeout;
 	boolean wTimeout;
-	private long expiration = 3 * 60 * 1000;
-	private Integer mostRecentGameId;
+	private long expiration = 5 * 60 * 1000;
+	private String mostRecentGameId;
 	Long currentTime;
 	private boolean wAck;
 	private boolean rAck;
 	NewBotHandler newBot;
+	Long babChatId;
+
+	Long ethChatId;
+	Long ethWDate;
+	Long ethRDate;
+	boolean ethWTimeout;
+	boolean ethRTimeout;
+	boolean ethWAlerted;
+	boolean ethRAlerted;
 	
 	public BabMonitoring() {
+		babChatId = (long) -297769804;
 		rDate = System.currentTimeMillis();
 		wDate = System.currentTimeMillis();
-		mostRecentGameId = 0;
+		mostRecentGameId = "";
 		wAck = true;
 		rAck = true;
 		newBot = Cache.getInstance().getBot();
 		wTimeout = false;
 		rTimeout = false;
+		
+		ethChatId = (long)-317649559;
+		ethWTimeout = false;
+		ethRTimeout = false;
+		ethRDate = System.currentTimeMillis();
+		ethWDate = System.currentTimeMillis();
+		ethWAlerted = false;
+		ethRAlerted = false;
+		
 	}
 	
 	public boolean isRAck(){
@@ -70,14 +89,27 @@ public class BabMonitoring {
 		        if(currentTime - wDate > expiration && !wTimeout){
 		        	wTimeout = true;
 		        	wAck = false;
-		    		sendMessage("No ping received from @snickersnack for " + ((currentTime - wDate)/1000)/60 + " minutes");
+		    		sendMessage("No ping received from @snickersnack for " + ((currentTime - wDate)/1000)/60 + " minutes", babChatId);
 		        }
 		        
 		        if(currentTime - rDate > expiration && !rTimeout){
 		        	rTimeout = true;
 		        	rAck = false;
-		    		sendMessage("No ping received from @raymondt for " + ((currentTime - rDate)/1000)/60 + " minutes");
+		    		sendMessage("No ping received from @raymondt for " + ((currentTime - rDate)/1000)/60 + " minutes", babChatId);
 		        }    
+		        
+		        if(currentTime - ethWDate > expiration && !ethWTimeout && !ethWAlerted){
+		        	ethWTimeout = true;
+		        	ethWAlerted = true;
+		    		sendMessage("No ping received from @snickersnack ethCrash for " + ((currentTime - ethWDate)/1000)/60 + " minutes", ethChatId);
+		        }   
+		        
+		        if(currentTime - ethRDate > expiration && !ethRTimeout && !ethRAlerted){
+		        	ethRTimeout = true;
+		        	ethRAlerted = true;
+		    		sendMessage("No ping received from @raymondt ethCrash for " + ((currentTime - ethRDate)/1000)/60 + " minutes", ethChatId);
+		        }   
+		        
 			}
 		}, 0, interval); 
 	
@@ -132,46 +164,68 @@ public class BabMonitoring {
 	        String s;
 	        while ((s = in.readLine()) != null) {
 	            System.out.println(s);
+
+	            if (s.isEmpty()) {
+	                break;
+	            }
 	            if(s.equals("GET /Snickersnack HTTP/1.1")){
 	        		wDate = System.currentTimeMillis();	
 	        		if(wTimeout){
 		        		wTimeout = false;
 		        		wAck = true;
-		        		sendMessage("Monitoring is active for snickersnack. Alert closed.");
+		        		sendMessage("Monitoring is active for snickersnack. Alert closed.", babChatId);
 	        		}
 	        		
 	        		break;
 	            }
-	            if(s.equals("GET /owmygroin HTTP/1.1")){
+	            else if(s.equals("GET /owmygroin HTTP/1.1")){
 	            	rDate = System.currentTimeMillis();
 	        		if(rTimeout){
 		        		rTimeout = false;
 		        		rAck = true;
-		        		sendMessage("Monitoring is active for owmygroin. Alert closed.");
+		        		sendMessage("Monitoring is active for owmygroin. Alert closed.", babChatId);
+	        		}	            	
+	        		break;
+	            }
+	            else if(s.equals("GET /eth/Snickersnack HTTP/1.1")){
+	            	ethWDate = System.currentTimeMillis();
+	        		if(ethWTimeout){
+		        		ethWTimeout = false;
+		        		ethWAlerted = false;
+		        		sendMessage("Monitoring is active for Snickersnack (eth).", ethChatId);
 	        		}	            	
 	        		break;
 	            }
 	            
-	            if(!s.equals("GET /owmygroin HTTP/1.1") && !s.equals("GET /Snickersnack HTTP/1.1")){
+	            else if(s.equals("GET /eth/1gbofpr0n HTTP/1.1")){
+	            	ethRDate = System.currentTimeMillis();
+	        		if(ethRTimeout){
+		        		ethRTimeout = false;
+		        		ethRAlerted = false;
+		        		sendMessage("Monitoring is active for 1gbofpr0n.", ethChatId);
+	        		}	            	
+	        		break;
+	            }
+	            
+	            else{
 	            	String[] sSplit = s.split(" ");
 		            String[] gameSplit = sSplit[1].split("/");
-	            	Integer gameId = Integer.parseInt(gameSplit[1]) + 1;
 
-		            if(mostRecentGameId != gameId){
-		        		mostRecentGameId= gameId;
+		            if(!mostRecentGameId.equals(gameSplit[1])){
+		        		mostRecentGameId= gameSplit[1];
+
+		            	Integer gameId = Integer.parseInt(gameSplit[1]) + 1;
+		            	
 						
 
 		        		sendMessage("High bet Game ID: " + 
-		        		"<a href = " + "\"" + "https://www.bustabit.com/game/" + mostRecentGameId + "\">" + 
-		        		mostRecentGameId + "</a>" + " Total bet: " + gameSplit[2]);
+		        		"<a href = " + "\"" + "https://www.bustabit.com/game/" + gameId + "\">" + 
+		        		gameId + "</a>" + " Total bet: " + gameSplit[2], babChatId);
 		            }
 		            break;
 	            }
 	            
 
-	            if (s.isEmpty()) {
-	                break;
-	            }
 	        }
 	        
             out.write("HTTP/1.0 200 OK\r\n");
@@ -247,9 +301,35 @@ public class BabMonitoring {
 		return sb.toString();
 	}
 	
-	private void sendMessage(String text){
+	
+	public String getEthStatusString(){
+		StringBuilder sb = new StringBuilder();
+		currentTime = System.currentTimeMillis();
+
+		if(ethWTimeout){
+			sb.append("Snickersnack(eth) script is currently down. Last seen " + ((currentTime - ethWDate)/1000) + " seconds ago");
+		}else{
+			sb.append("Snickersnack(eth) script is currently up. Last seen " + ((currentTime - ethWDate)/1000) + " seconds ago");
+		}
+		
+		sb.append(System.getProperty("line.separator"));
+
+		if(ethRTimeout){
+			sb.append("1gbofpr0n script is currently down. Last seen " + ((currentTime - ethRDate)/1000) + " seconds ago");
+		}else{
+			sb.append("1gbofpr0n script is currently up. Last seen " + ((currentTime - ethRDate)/1000) + " seconds ago");
+		}
+
+		return sb.toString();
+	}
+	
+	
+	
+	
+	
+	private void sendMessage(String text, Long chatId){
 		SendMessage sendMessageRequest = new SendMessage();
-		sendMessageRequest.setChatId((long) -297769804);
+		sendMessageRequest.setChatId(chatId);
 		sendMessageRequest.setText(text);
 		sendMessageRequest.disableWebPagePreview();
 		sendMessageRequest.setParseMode(BotConfig.SENDMESSAGEMARKDOWN);

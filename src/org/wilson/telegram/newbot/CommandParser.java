@@ -92,6 +92,7 @@ public class CommandParser {
 		else if (command.startsWith(Commands.SHEETSCOMMAND)) {
 			if(message.getChatId() == (long) -297769804){
 				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest.disableWebPagePreview();
 				sendMessageRequest.setText("https://docs.google.com/spreadsheets/d/1ab6mEMbtwQEZxZO0IasIBrMMe15unlHeqo7w7M32uCo/edit#gid=81553350");
 			}
 		}
@@ -101,11 +102,71 @@ public class CommandParser {
 				sendMessageRequest.setChatId(message.getChatId());
 				sendMessageRequest.setText(monitor.getStatusString());
 			}
+			
+			else if(message.getChatId() == (long)-317649559){
+				BabMonitoring monitor = Cache.getInstance().getMonitor();
+				sendMessageRequest.setChatId(message.getChatId());
+				sendMessageRequest.setText(monitor.getEthStatusString());
+			}
+			
 		}
 		else if (command.startsWith(Commands.USERSCOMMAND)) {
 			BotUtilities utilities = new BotUtilities(message);
 			sendMessageRequest = utilities.sendUsers();
 
+		}
+		else if(command.startsWith("/verifynpi")){
+			sendMessageRequest.setChatId(message.getChatId());
+			String NPIStr = command.split(" ")[1];
+			if(NPIStr.length() > 10 ){
+				sendMessageRequest.setText("Not an NPI number");
+			}else{
+				Integer total = 0;
+				Integer checkNumber = 0;
+				for(int i = NPIStr.length()-1; i>=0; i--){
+					Integer number = Integer.parseInt(NPIStr.substring(i,i+1));
+					if(i==NPIStr.length()-1){
+						checkNumber=number;
+					}else{
+						if (i%2 == 0){
+							Integer numDouble =(number*2);
+
+
+							while(numDouble > 0){
+
+								total+=numDouble%10;
+								numDouble/=10;
+							}
+							
+
+						}else{
+							total += number;
+						}
+					}
+
+				}
+
+				total+=24;
+				Integer nextHighest10 = total;
+
+				if(total % 10 != 0){
+					for(int i = 1; i<10; i++){
+						if((total+i) % 10 == 0){
+							nextHighest10 = total+i;
+							break;
+						}
+					}
+				}
+				
+				if(nextHighest10-total == checkNumber){
+					sendMessageRequest.setText("Valid NPI");
+
+				}else{
+					sendMessageRequest.setText("Invalid NPI");
+
+				}
+					
+			}
 		}
 		else if(command.startsWith(Commands.CRYCOMMAND)){
 			SendDocument send = new SendDocument();
