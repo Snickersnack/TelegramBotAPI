@@ -320,10 +320,18 @@ public class OpenDotaService {
 		}
 		StringBuilder partyMembers = new StringBuilder();
 		for(OpenDotaPlayer player : openDotaMatch.getPlayers()){
-			if(player.getParty_id()==party_id && !player.getPersonaName().equals(personaName)){
-				partyMembers.append(player.getPersonaName()+ " ");
+			try{
+				if(player.getPersonaName() != null){
+					if(player.getParty_id()==party_id && !player.getPersonaName().equals(personaName)){
+						partyMembers.append(player.getPersonaName()+ " ");
 
+					}
+
+				}
+			}catch(Exception e){
+				partyMembers.append("null" + " ");
 			}
+
 
 			
 		}

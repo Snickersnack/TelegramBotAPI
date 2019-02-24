@@ -1,1 +1,1 @@
-worker: java -jar target/TelegramBotAPI.jar
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/TelegramBotAPI.jar

@@ -33,13 +33,13 @@ public class Main {
         
         
         
-        BabMonitoring bab = new BabMonitoring();
-        Cache.getInstance().setMonitor(bab);
-        try {
-			bab.receive();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//        BabMonitoring bab = new BabMonitoring();
+//        Cache.getInstance().setMonitor(bab);
+//        try {
+//			bab.receive();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
         
         
         

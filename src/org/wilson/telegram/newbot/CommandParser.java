@@ -103,11 +103,6 @@ public class CommandParser {
 				sendMessageRequest.setText(monitor.getStatusString());
 			}
 			
-			else if(message.getChatId() == (long)-317649559){
-				BabMonitoring monitor = Cache.getInstance().getMonitor();
-				sendMessageRequest.setChatId(message.getChatId());
-				sendMessageRequest.setText(monitor.getEthStatusString());
-			}
 			
 		}
 		else if (command.startsWith(Commands.USERSCOMMAND)) {

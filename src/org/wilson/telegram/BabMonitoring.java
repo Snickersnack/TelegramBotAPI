@@ -36,14 +36,7 @@ public class BabMonitoring {
 	NewBotHandler newBot;
 	Long babChatId;
 
-	Long ethChatId;
-	Long ethWDate;
-	Long ethRDate;
-	boolean ethWTimeout;
-	boolean ethRTimeout;
-	boolean ethWAlerted;
-	boolean ethRAlerted;
-	
+
 	public BabMonitoring() {
 		babChatId = (long) -297769804;
 		rDate = System.currentTimeMillis();
@@ -54,14 +47,6 @@ public class BabMonitoring {
 		newBot = Cache.getInstance().getBot();
 		wTimeout = false;
 		rTimeout = false;
-		
-		ethChatId = (long)-317649559;
-		ethWTimeout = false;
-		ethRTimeout = false;
-		ethRDate = System.currentTimeMillis();
-		ethWDate = System.currentTimeMillis();
-		ethWAlerted = false;
-		ethRAlerted = false;
 		
 	}
 	
@@ -98,17 +83,6 @@ public class BabMonitoring {
 		    		sendMessage("No ping received from @raymondt for " + ((currentTime - rDate)/1000)/60 + " minutes", babChatId);
 		        }    
 		        
-		        if(currentTime - ethWDate > expiration && !ethWTimeout && !ethWAlerted){
-		        	ethWTimeout = true;
-		        	ethWAlerted = true;
-		    		sendMessage("No ping received from @snickersnack ethCrash for " + ((currentTime - ethWDate)/1000)/60 + " minutes", ethChatId);
-		        }   
-		        
-		        if(currentTime - ethRDate > expiration && !ethRTimeout && !ethRAlerted){
-		        	ethRTimeout = true;
-		        	ethRAlerted = true;
-		    		sendMessage("No ping received from @raymondt ethCrash for " + ((currentTime - ethRDate)/1000)/60 + " minutes", ethChatId);
-		        }   
 		        
 			}
 		}, 0, interval); 
@@ -187,42 +161,33 @@ public class BabMonitoring {
 	        		}	            	
 	        		break;
 	            }
-	            else if(s.equals("GET /eth/Snickersnack HTTP/1.1")){
-	            	ethWDate = System.currentTimeMillis();
-	        		if(ethWTimeout){
-		        		ethWTimeout = false;
-		        		ethWAlerted = false;
-		        		sendMessage("Monitoring is active for Snickersnack (eth).", ethChatId);
-	        		}	            	
-	        		break;
+	            else if(s.equals("GET / HTTP/1.1")){
+	            	sendMessage("Empty GET request", babChatId);
+	            	break;
 	            }
-	            
-	            else if(s.equals("GET /eth/1gbofpr0n HTTP/1.1")){
-	            	ethRDate = System.currentTimeMillis();
-	        		if(ethRTimeout){
-		        		ethRTimeout = false;
-		        		ethRAlerted = false;
-		        		sendMessage("Monitoring is active for 1gbofpr0n.", ethChatId);
-	        		}	            	
-	        		break;
-	            }
-	            
 	            else{
-	            	String[] sSplit = s.split(" ");
-		            String[] gameSplit = sSplit[1].split("/");
+	            	
+	            	try{
+		            	String[] sSplit = s.split(" ");
+			            String[] gameSplit = sSplit[1].split("/");
 
-		            if(!mostRecentGameId.equals(gameSplit[1])){
-		        		mostRecentGameId= gameSplit[1];
+			            if(!mostRecentGameId.equals(gameSplit[1])){
+			        		mostRecentGameId= gameSplit[1];
 
-		            	Integer gameId = Integer.parseInt(gameSplit[1]) + 1;
-		            	
-						
+			            	Integer gameId = Integer.parseInt(gameSplit[1]) + 1;
+			            	
+							
 
-		        		sendMessage("High bet Game ID: " + 
-		        		"<a href = " + "\"" + "https://www.bustabit.com/game/" + gameId + "\">" + 
-		        		gameId + "</a>" + " Total bet: " + gameSplit[2], babChatId);
-		            }
-		            break;
+			        		sendMessage("High bet Game ID: " + 
+			        		"<a href = " + "\"" + "https://www.bustabit.com/game/" + gameId + "\">" + 
+			        		gameId + "</a>" + " Total bet: " + gameSplit[2], babChatId);
+			            }
+			            break;
+	            	}catch(Exception e){
+	            		sendMessage(e.toString(), babChatId);
+	            		break;
+	            	}
+
 	            }
 	            
 
@@ -302,28 +267,7 @@ public class BabMonitoring {
 	}
 	
 	
-	public String getEthStatusString(){
-		StringBuilder sb = new StringBuilder();
-		currentTime = System.currentTimeMillis();
 
-		if(ethWTimeout){
-			sb.append("Snickersnack(eth) script is currently down. Last seen " + ((currentTime - ethWDate)/1000) + " seconds ago");
-		}else{
-			sb.append("Snickersnack(eth) script is currently up. Last seen " + ((currentTime - ethWDate)/1000) + " seconds ago");
-		}
-		
-		sb.append(System.getProperty("line.separator"));
-
-		if(ethRTimeout){
-			sb.append("1gbofpr0n script is currently down. Last seen " + ((currentTime - ethRDate)/1000) + " seconds ago");
-		}else{
-			sb.append("1gbofpr0n script is currently up. Last seen " + ((currentTime - ethRDate)/1000) + " seconds ago");
-		}
-
-		return sb.toString();
-	}
-	
-	
 	
 	
 	
